@@ -55,16 +55,18 @@ lib/
 - **Compétences** (briques) : `lib/translations.ts` → `skills.groups`
 - **Expérience** (timeline) : `lib/translations.ts` → `experience.items`
 
-## Déploiement Render
+## Déploiement Render (Static Site — gratuit à vie)
 
-Le `render.yaml` déclare un service web Node. Sur Render :
+Le `render.yaml` déclare un **static service** : `npm run build` génère le dossier `out/` (export statique), Render sert les fichiers directement.
 
 1. New → Blueprint → sélectionne ce repo.
 2. Node version = 20 (déjà réglé via env var).
 3. Deploy.
 
 Build : `npm install && npm run build`
-Start : `npm run start`
+Publish path : `./out`
+
+Pas de mise en veille, pas de démarrage à froid.
 
 ## Galerie 3D/CAO
 
