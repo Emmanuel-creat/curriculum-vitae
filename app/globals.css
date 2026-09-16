@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+:root {
+  --grid-size: 32px;
+}
+
+html,
+body {
+  background: #050608;
+  color: #e5e9f0;
+  font-family: "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(1200px 600px at 50% -10%, rgba(125, 211, 252, 0.08), transparent 70%),
+    radial-gradient(800px 400px at 90% 30%, rgba(192, 132, 252, 0.06), transparent 70%),
+    #050608;
+}
+
+::selection {
+  background: rgba(125, 211, 252, 0.25);
+  color: #f4f6fa;
+}
+
+.chrome-text {
+  background: linear-gradient(
+    135deg,
+    #f4f6fa 0%,
+    #a4adbf 20%,
+    #f4f6fa 40%,
+    #5b6377 60%,
+    #e5e9f0 80%,
+    #a4adbf 100%
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: chrome-shift 8s ease-in-out infinite;
+}
+
+@keyframes chrome-shift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: var(--grid-size) var(--grid-size);
+  mask-image: radial-gradient(ellipse 100% 60% at 50% 40%, black 40%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 100% 60% at 50% 40%, black 40%, transparent 100%);
+}
+
+.brick {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 20px 40px -20px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+}
+
+.brick-hover {
+  transition: all 0.3s ease;
+}
+
+.brick-hover:hover {
+  border-color: rgba(255, 255, 255, 0.16);
+  transform: translateY(-2px);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 30px 60px -20px rgba(0, 0, 0, 0.8),
+    0 0 40px -10px rgba(125, 211, 252, 0.15);
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.15) 50%,
+    transparent 100%
+  );
+}
+
+.sparkle {
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.15));
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  display: inline-block;
+  background: currentColor;
+  box-shadow: 0 0 12px currentColor;
+}
+
+.kbd {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #a4adbf;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #c9d0dc;
+}
