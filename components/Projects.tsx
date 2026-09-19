@@ -43,7 +43,7 @@ export default function Projects() {
               >
                 <Link
                   href={`/projects/${c.slug}`}
-                  className="group block brick brick-hover rounded-2xl p-6 h-full relative overflow-hidden"
+                  className="group block brick brick-hover p-6 h-full relative overflow-hidden"
                 >
                   <div
                     className="absolute -top-16 -right-16 w-48 h-48 rounded-full opacity-[0.08] blur-3xl"

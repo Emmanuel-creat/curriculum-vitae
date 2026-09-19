@@ -20,7 +20,7 @@ export default function GalleryTeaser() {
           {Array.from({ length: 8 }).map((_, i) => (
             <div
               key={i}
-              className="brick rounded-xl aspect-square relative overflow-hidden group"
+              className="brick aspect-square relative overflow-hidden group"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-chrome-500/10 via-transparent to-chrome-500/5" />
               <div className="absolute inset-0 flex items-center justify-center text-chrome-500 text-xs font-mono">

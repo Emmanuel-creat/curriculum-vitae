@@ -53,7 +53,7 @@ function ExperienceCard({
   item: { when: string; role: string; org: string; desc: string; href?: string };
 }) {
   const inner = (
-    <div className="brick brick-hover rounded-2xl p-6">
+    <div className="brick brick-hover p-6">
       <div className="flex items-baseline justify-between gap-4 flex-wrap">
         <div className="text-xs font-mono uppercase tracking-widest text-chrome-500">
           {item.when}

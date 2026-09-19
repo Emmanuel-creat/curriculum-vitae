@@ -62,7 +62,7 @@ export default function GalleryPage() {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true, margin: "-40px" }}
                       transition={{ duration: 0.4, delay: i * 0.03 }}
-                      className="brick rounded-xl aspect-square relative overflow-hidden group"
+                      className="brick aspect-square relative overflow-hidden group"
                     >
                       <div
                         className="absolute inset-0 opacity-[0.08]"

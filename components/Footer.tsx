@@ -14,8 +14,8 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3">
               <div className="relative w-10 h-10">
-                <div className="absolute inset-0 bg-gradient-to-br from-chrome-100 to-chrome-500 rounded-lg rotate-45" />
-                <div className="absolute inset-1 bg-ink-950 rounded-md rotate-45" />
+                <div className="absolute inset-0 bg-gradient-to-br from-chrome-100 to-chrome-500 rotate-45" />
+                <div className="absolute inset-1 bg-ink-950 rotate-45" />
                 <div className="absolute inset-0 flex items-center justify-center font-display font-bold text-chrome-100">
                   EB
                 </div>

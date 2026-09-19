@@ -61,7 +61,7 @@ export default function Skills() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: i * 0.05 }}
-                className="brick brick-hover rounded-2xl p-6 relative overflow-hidden"
+                className="brick brick-hover p-6 relative overflow-hidden"
               >
                 <div
                   className="absolute -top-8 -right-8 w-32 h-32 rounded-full opacity-[0.07] blur-2xl"

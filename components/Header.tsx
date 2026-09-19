@@ -29,8 +29,8 @@ export default function Header() {
           aria-label="Home"
         >
           <div className="relative w-8 h-8">
-            <div className="absolute inset-0 bg-gradient-to-br from-chrome-100 to-chrome-500 rounded-md rotate-45 group-hover:rotate-90 transition-transform duration-500" />
-            <div className="absolute inset-1 bg-ink-950 rounded-sm rotate-45" />
+            <div className="absolute inset-0 bg-gradient-to-br from-chrome-100 to-chrome-500 rotate-45 group-hover:rotate-90 transition-transform duration-500" />
+            <div className="absolute inset-1 bg-ink-950 rotate-45" />
             <div className="absolute inset-0 flex items-center justify-center font-display font-bold text-sm text-chrome-100">
               EB
             </div>
@@ -52,7 +52,7 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <button
             onClick={() => setLang(lang === "fr" ? "en" : "fr")}
-            className="text-xs font-mono uppercase tracking-widest px-3 py-1.5 rounded-full border border-white/10 hover:border-white/30 transition"
+            className="text-xs font-mono uppercase tracking-widest px-3 py-1.5 border border-white/10 hover:border-white/30 transition"
             aria-label="Toggle language"
           >
             {lang === "fr" ? "EN" : "FR"}

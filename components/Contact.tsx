@@ -63,7 +63,7 @@ function ContactCard({
       href={href}
       target={external ? "_blank" : undefined}
       rel={external ? "noreferrer" : undefined}
-      className="brick brick-hover rounded-2xl p-6 group block"
+      className="brick brick-hover p-6 group block"
     >
       <div className="text-xl mb-3 text-chrome-300">{icon}</div>
       <div className="text-xs uppercase tracking-widest text-chrome-500 mb-1">

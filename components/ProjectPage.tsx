@@ -78,10 +78,10 @@ export default function ProjectPage({ slug, heroImage }: Props) {
                 className="relative"
               >
                 <div
-                  className="absolute -inset-6 blur-3xl rounded-[3rem] opacity-30"
+                  className="absolute -inset-6 blur-3xl opacity-30"
                   style={{ background: meta.accent }}
                 />
-                <div className="brick rounded-[1.75rem] overflow-hidden aspect-[4/5] relative">
+                <div className="brick overflow-hidden aspect-[4/5] relative">
                   <img
                     src={heroImage}
                     alt={data.title}
@@ -134,7 +134,7 @@ export default function ProjectPage({ slug, heroImage }: Props) {
           <Section title={t("project.results")} accent={meta.accent}>
             <div className="grid gap-4 sm:grid-cols-2">
               {data.results.map((r, i) => (
-                <div key={i} className="brick rounded-xl p-5 text-chrome-200 text-sm leading-relaxed">
+                <div key={i} className="brick p-5 text-chrome-200 text-sm leading-relaxed">
                   <div
                     className="text-xs font-mono mb-2"
                     style={{ color: meta.accent }}
@@ -169,7 +169,7 @@ export default function ProjectPage({ slug, heroImage }: Props) {
                   href={l.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="brick brick-hover rounded-xl px-5 py-3 text-sm text-chrome-100 inline-flex items-center gap-2"
+                  className="brick brick-hover px-5 py-3 text-sm text-chrome-100 inline-flex items-center gap-2"
                 >
                   {l.label}
                   <span className="text-chrome-400">↗</span>
@@ -184,7 +184,7 @@ export default function ProjectPage({ slug, heroImage }: Props) {
         <div className="grid gap-4 sm:grid-cols-2">
           <Link
             href={`/projects/${prev.slug}`}
-            className="brick brick-hover rounded-2xl p-5 group"
+            className="brick brick-hover p-5 group"
           >
             <div className="text-xs uppercase tracking-widest text-chrome-500">
               ← {t("project.prev")}
@@ -195,7 +195,7 @@ export default function ProjectPage({ slug, heroImage }: Props) {
           </Link>
           <Link
             href={`/projects/${next.slug}`}
-            className="brick brick-hover rounded-2xl p-5 text-right group"
+            className="brick brick-hover p-5 text-right group"
           >
             <div className="text-xs uppercase tracking-widest text-chrome-500">
               {t("project.next")} →
@@ -212,7 +212,7 @@ export default function ProjectPage({ slug, heroImage }: Props) {
 
 function Meta({ label, value }: { label: string; value: string }) {
   return (
-    <div className="brick rounded-xl p-4">
+    <div className="brick p-4">
       <div className="text-[10px] uppercase tracking-widest text-chrome-500">
         {label}
       </div>

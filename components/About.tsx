@@ -21,7 +21,7 @@ export default function About() {
           </div>
 
           <div className="md:col-span-3">
-            <div className="brick rounded-2xl overflow-hidden aspect-[3/4] relative group">
+            <div className="brick overflow-hidden aspect-[3/4] relative group">
               <img
                 src="/images/iris.jpg"
                 alt="Iris · regard curieux"
@@ -38,7 +38,7 @@ export default function About() {
           </div>
 
           <div className="md:col-span-3">
-            <div className="brick rounded-2xl p-5 space-y-5 h-full">
+            <div className="brick p-5 space-y-5 h-full">
               <QuickFact icon={<IconPin />} value={qf.location} />
               <QuickFact icon={<IconAcademic />} value={qf.study} />
               <QuickFact icon={<IconSearch />} value={qf.available} />
