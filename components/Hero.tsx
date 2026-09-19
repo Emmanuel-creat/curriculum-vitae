@@ -19,7 +19,7 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
           >
             <div className="tag mb-6">
-              <span className="dot text-accent-bio" />
+              <span className="dot dot-pulse text-accent-bio" />
               {t("hero.badge")}
             </div>
 

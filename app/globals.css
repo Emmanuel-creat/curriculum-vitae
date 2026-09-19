@@ -111,6 +111,24 @@ body {
   box-shadow: 0 0 12px currentColor;
 }
 
+@keyframes soft-pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 12px currentColor;
+  }
+  50% {
+    opacity: 0.55;
+    transform: scale(0.85);
+    box-shadow: 0 0 4px currentColor;
+  }
+}
+
+.dot-pulse {
+  animation: soft-pulse 2.4s ease-in-out infinite;
+}
+
 .kbd {
   font-family: "JetBrains Mono", ui-monospace, monospace;
   font-size: 11px;

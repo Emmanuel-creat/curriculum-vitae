@@ -141,7 +141,7 @@ export const translations: Record<Lang, Dict> = {
       quickfacts: {
         location: "Marseille, France",
         study: "Master 2 IEAP BTI · AMU",
-        available: "Stage · Février → Juillet 2027",
+        available: "Stage · Avril → Août 2026",
         stack: "Python · R · SolidWorks · Fusion 360 · PyTorch",
       },
     },
@@ -230,7 +230,7 @@ export const translations: Record<Lang, Dict> = {
       title: "Les étapes qui ont construit mon parcours.",
       items: [
         {
-          when: "Fév. → Juil. 2027",
+          when: "Avr. → Août 2026",
           role: "Stagiaire R&D",
           org: "MGA Medtech · BioMemory",
           desc: "Automatisation de bancs de test métrologiques, prototypage multi-procédés, circuits fluidiques picolitriques.",
@@ -402,7 +402,7 @@ export const translations: Record<Lang, Dict> = {
       quickfacts: {
         location: "Marseille, France",
         study: "M2 IEAP BTI · AMU",
-        available: "Internship · Feb → Jul 2027",
+        available: "Internship · Apr → Aug 2026",
         stack: "Python · R · SolidWorks · Fusion 360 · PyTorch",
       },
     },
@@ -491,7 +491,7 @@ export const translations: Record<Lang, Dict> = {
       title: "The steps that built my path.",
       items: [
         {
-          when: "Feb → Jul 2027",
+          when: "Apr → Aug 2026",
           role: "R&D Intern",
           org: "MGA Medtech · BioMemory",
           desc: "Automated metrology benches, multi-process prototyping, picoliter fluidic circuits.",

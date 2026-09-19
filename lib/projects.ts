@@ -95,7 +95,7 @@ export const projectContent: Record<Slug, Record<"fr" | "en", ProjectContent>> =
     fr: {
       title: "BioMemory",
       subtitle: "Stage R&D · MGA Medtech",
-      period: "Février → Juillet 2027",
+      period: "Avril → Août 2026",
       role: "Stagiaire R&D · Équipe de développement interne",
       status: "Stage à venir",
       pitch:
@@ -133,7 +133,7 @@ export const projectContent: Record<Slug, Record<"fr" | "en", ProjectContent>> =
     en: {
       title: "BioMemory",
       subtitle: "R&D Internship · MGA Medtech",
-      period: "February → July 2027",
+      period: "April → August 2026",
       role: "R&D intern · Internal development team",
       status: "Upcoming",
       pitch:
