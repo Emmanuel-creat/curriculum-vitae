@@ -134,10 +134,10 @@ export const translations: Record<Lang, Dict> = {
     },
     about: {
       kicker: "À propos",
-      title: "Curieux, créatif, entre paillasse et clavier.",
-      body: "Je suis Emmanuel, 22 ans, en Master 2 Bio-ingénierie des Tissus et des Implants à Aix-Marseille. Ce qui me passionne, c'est le point de contact — celui où un modèle éléments finis rencontre un vrai tissu, où un script Python pilote un moteur qui déplace une goutte de silicone, où une pièce imprimée sort de la machine et fait exactement ce qu'on avait dessiné trois semaines plus tôt.",
+      title: "Curieux, créatif et passionné par l'innovation",
+      body: "Je suis Emmanuel, 23 ans, actuellement en Master 2 Bio-ingénierie des Tissus et des Implants à Aix-Marseille. Ce qui me passionne avant tout, c'est la découverte de phénomènes et de principes physiques qui me sont encore inconnus, comprendre le fonctionnement des choses et explorer les mécanismes qui les rendent possibles.",
       body2:
-        "Je viens d'un cursus ingénieur (ESME Sudria) et j'ai bifurqué vers la bioingénierie parce que le vivant est le système le plus intéressant que je connaisse. Aujourd'hui je cherche un stage de fin d'études R&D où je peux continuer à apprendre en faisant, avec des gens qui aiment prototyper.",
+        "Puis, j'aime chercher à les reproduire, les modifier et les personnaliser, afin de voir jusqu'où il est possible d'aller et d'imaginer de nouvelles applications. Ma curiosité me pousse naturellement à faire le lien entre différentes disciplines, à apprendre par la pratique et à transformer une idée en quelque chose de concret.",
       quickfacts: {
         location: "Marseille, France",
         study: "Master 2 IEAP BTI · AMU",
@@ -395,10 +395,10 @@ export const translations: Record<Lang, Dict> = {
     },
     about: {
       kicker: "About",
-      title: "Curious, hands-on — between wet lab and keyboard.",
-      body: "I'm Emmanuel, 22, in the second year of the Master's in Bioengineering of Tissues and Implants at Aix-Marseille University. What drives me is the interface — where a finite element model meets real tissue, where a Python script drives a motor that dispenses a picoliter droplet, where a printed part comes out of the machine and does exactly what was drawn three weeks earlier.",
+      title: "Curious, creative and driven by innovation",
+      body: "I'm Emmanuel, 23, currently in the second year of the Master's in Bioengineering of Tissues and Implants at Aix-Marseille University. What drives me above all is discovering phenomena and physical principles I don't yet know — understanding how things work and exploring the mechanisms that make them possible.",
       body2:
-        "I started in a classical engineering school (ESME Sudria) and switched to bioengineering because the living is the most interesting system I know. Today I'm looking for an R&D end-of-studies internship where I can keep learning by doing, with people who love to prototype.",
+        "Then I love trying to reproduce them, modify them, make them my own — to see how far I can go and imagine new applications. My curiosity naturally pushes me to bridge disciplines, to learn by doing, and to turn an idea into something tangible.",
       quickfacts: {
         location: "Marseille, France",
         study: "M2 IEAP BTI · AMU",
