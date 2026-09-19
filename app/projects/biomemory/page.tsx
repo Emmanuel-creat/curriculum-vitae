@@ -6,5 +6,5 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <ProjectPage slug="biomemory" />;
+  return <ProjectPage slug="biomemory" heroImage="/images/lattice.jpg" />;
 }

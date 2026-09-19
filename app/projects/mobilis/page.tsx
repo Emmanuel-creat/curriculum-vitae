@@ -6,5 +6,5 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <ProjectPage slug="mobilis" />;
+  return <ProjectPage slug="mobilis" heroImage="/images/anatomy.jpg" />;
 }

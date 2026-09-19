@@ -6,5 +6,5 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <ProjectPage slug="vic2d" />;
+  return <ProjectPage slug="vic2d" heroImage="/images/knee.webp" />;
 }

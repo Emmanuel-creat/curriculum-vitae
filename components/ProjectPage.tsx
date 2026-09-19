@@ -4,11 +4,10 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useI18n } from "@/lib/i18n";
 import { projectContent, projectOrder, ProjectSlug } from "@/lib/projects";
-import Sparkle from "./Sparkle";
 
-type Props = { slug: ProjectSlug };
+type Props = { slug: ProjectSlug; heroImage?: string };
 
-export default function ProjectPage({ slug }: Props) {
+export default function ProjectPage({ slug, heroImage }: Props) {
   const { t, lang } = useI18n();
   const data = projectContent[slug][lang];
   const meta = projectOrder.find((p) => p.slug === slug)!;
@@ -24,9 +23,6 @@ export default function ProjectPage({ slug }: Props) {
           className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full opacity-[0.12] blur-3xl -translate-y-1/3 translate-x-1/4"
           style={{ background: meta.accent }}
         />
-        <div className="absolute right-4 top-24 opacity-30 hidden md:block">
-          <Sparkle size={280} />
-        </div>
 
         <div className="relative mx-auto max-w-6xl px-6 py-16">
           <Link
@@ -36,42 +32,67 @@ export default function ProjectPage({ slug }: Props) {
             ← {t("project.back")}
           </Link>
 
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="max-w-4xl"
-          >
-            <div className="flex items-center gap-3 mb-4">
-              <span
-                className="tag"
-                style={{
-                  color: meta.accent,
-                  borderColor: `${meta.accent}33`,
-                  background: `${meta.accent}0d`,
-                }}
+          <div className={`grid gap-10 ${heroImage ? "lg:grid-cols-[1.25fr_1fr] items-center" : ""}`}>
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="max-w-4xl"
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <span
+                  className="tag"
+                  style={{
+                    color: meta.accent,
+                    borderColor: `${meta.accent}33`,
+                    background: `${meta.accent}0d`,
+                  }}
+                >
+                  <span className="dot" style={{ color: meta.accent }} />
+                  {meta.tag}
+                </span>
+                <span className="text-xs font-mono text-chrome-500">
+                  {String(meta.order).padStart(2, "0")} / 07
+                </span>
+              </div>
+
+              <h1 className="font-display font-semibold text-5xl md:text-7xl leading-[0.95] tracking-tight">
+                <span className="chrome-text">{data.title}</span>
+              </h1>
+              <p className="mt-4 text-xl md:text-2xl text-chrome-300 max-w-3xl">
+                {data.subtitle}
+              </p>
+
+              <div className="mt-8 grid gap-4 sm:grid-cols-3 max-w-3xl">
+                <Meta label={t("project.period")} value={data.period} />
+                <Meta label={t("project.role")} value={data.role} />
+                <Meta label={t("project.status")} value={data.status} />
+              </div>
+            </motion.div>
+
+            {heroImage && (
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, delay: 0.15 }}
+                className="relative"
               >
-                <span className="dot" style={{ color: meta.accent }} />
-                {meta.tag}
-              </span>
-              <span className="text-xs font-mono text-chrome-500">
-                {String(meta.order).padStart(2, "0")} / 07
-              </span>
-            </div>
-
-            <h1 className="font-display font-semibold text-5xl md:text-7xl leading-[0.95] tracking-tight">
-              <span className="chrome-text">{data.title}</span>
-            </h1>
-            <p className="mt-4 text-xl md:text-2xl text-chrome-300 max-w-3xl">
-              {data.subtitle}
-            </p>
-
-            <div className="mt-8 grid gap-4 sm:grid-cols-3 max-w-3xl">
-              <Meta label={t("project.period")} value={data.period} />
-              <Meta label={t("project.role")} value={data.role} />
-              <Meta label={t("project.status")} value={data.status} />
-            </div>
-          </motion.div>
+                <div
+                  className="absolute -inset-6 blur-3xl rounded-[3rem] opacity-30"
+                  style={{ background: meta.accent }}
+                />
+                <div className="brick rounded-[1.75rem] overflow-hidden aspect-[4/5] relative">
+                  <img
+                    src={heroImage}
+                    alt={data.title}
+                    className="w-full h-full object-cover"
+                    loading="eager"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink-950/60 via-transparent to-transparent" />
+                </div>
+              </motion.div>
+            )}
+          </div>
         </div>
       </div>
 

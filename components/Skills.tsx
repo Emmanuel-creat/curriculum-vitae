@@ -18,8 +18,17 @@ export default function Skills() {
   const { t, dict } = useI18n();
 
   return (
-    <section id="skills" className="relative py-32 border-t border-white/5">
-      <div className="mx-auto max-w-7xl px-6">
+    <section id="skills" className="relative py-32 border-t border-white/5 overflow-hidden">
+      <div
+        className="absolute right-0 top-32 w-[420px] h-[420px] rounded-full opacity-30 blur-2xl pointer-events-none hidden lg:block"
+        style={{
+          backgroundImage: "url('/images/neuron.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          mixBlendMode: "screen",
+        }}
+      />
+      <div className="relative mx-auto max-w-7xl px-6">
         <SectionHeader
           kicker={t("skills.kicker")}
           title={t("skills.title")}
