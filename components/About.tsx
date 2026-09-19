@@ -1,7 +1,9 @@
 "use client";
 
+import { ReactNode } from "react";
 import { useI18n } from "@/lib/i18n";
 import SectionHeader from "./SectionHeader";
+import { IconAcademic, IconPin, IconSearch, IconTools } from "./Icon";
 
 export default function About() {
   const { t, dict } = useI18n();
@@ -36,11 +38,11 @@ export default function About() {
           </div>
 
           <div className="md:col-span-3">
-            <div className="brick rounded-2xl p-5 space-y-4 h-full">
-              <QuickFact label="📍" value={qf.location} />
-              <QuickFact label="🎓" value={qf.study} />
-              <QuickFact label="🔍" value={qf.available} />
-              <QuickFact label="🛠" value={qf.stack} />
+            <div className="brick rounded-2xl p-5 space-y-5 h-full">
+              <QuickFact icon={<IconPin />} value={qf.location} />
+              <QuickFact icon={<IconAcademic />} value={qf.study} />
+              <QuickFact icon={<IconSearch />} value={qf.available} />
+              <QuickFact icon={<IconTools />} value={qf.stack} />
             </div>
           </div>
         </div>
@@ -49,11 +51,11 @@ export default function About() {
   );
 }
 
-function QuickFact({ label, value }: { label: string; value: string }) {
+function QuickFact({ icon, value }: { icon: ReactNode; value: string }) {
   return (
     <div className="flex items-start gap-3 text-sm">
-      <span className="text-lg">{label}</span>
-      <span className="text-chrome-200 font-medium">{value}</span>
+      <span className="text-chrome-300 mt-0.5 flex-shrink-0">{icon}</span>
+      <span className="text-chrome-200 font-medium leading-snug">{value}</span>
     </div>
   );
 }
