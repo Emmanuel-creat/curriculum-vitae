@@ -1,18 +1,34 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { ComponentType } from "react";
 import { useI18n } from "@/lib/i18n";
 import SectionHeader from "./SectionHeader";
+import {
+  IconChart,
+  IconChip,
+  IconCode,
+  IconCube,
+  IconDna,
+  IconSparkle,
+  IconWrench,
+} from "./Icon";
 
-const GROUP_META = [
-  { key: "bio", color: "#4ade80", icon: "🧬" },
-  { key: "code", color: "#818cf8", icon: "⌨" },
-  { key: "cao", color: "#facc15", icon: "◇" },
-  { key: "fab", color: "#fb923c", icon: "⚙" },
-  { key: "data", color: "#f472b6", icon: "📊" },
-  { key: "embed", color: "#22d3ee", icon: "▤" },
-  { key: "soft", color: "#c084fc", icon: "✱" },
-] as const;
+type SkillGroupKey = "bio" | "code" | "cao" | "fab" | "data" | "embed" | "soft";
+
+const GROUP_META: {
+  key: SkillGroupKey;
+  color: string;
+  Icon: ComponentType<{ size?: number }>;
+}[] = [
+  { key: "bio", color: "#4ade80", Icon: IconDna },
+  { key: "code", color: "#818cf8", Icon: IconCode },
+  { key: "cao", color: "#facc15", Icon: IconCube },
+  { key: "fab", color: "#fb923c", Icon: IconWrench },
+  { key: "data", color: "#f472b6", Icon: IconChart },
+  { key: "embed", color: "#22d3ee", Icon: IconChip },
+  { key: "soft", color: "#c084fc", Icon: IconSparkle },
+];
 
 export default function Skills() {
   const { t, dict } = useI18n();
@@ -54,10 +70,11 @@ export default function Skills() {
                 <div className="relative flex items-start justify-between mb-4">
                   <div>
                     <div
-                      className="text-xs font-mono uppercase tracking-widest mb-1"
+                      className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest mb-2"
                       style={{ color: meta.color }}
                     >
-                      {meta.icon} {String(i + 1).padStart(2, "0")}
+                      <meta.Icon size={18} />
+                      {String(i + 1).padStart(2, "0")}
                     </div>
                     <h3 className="font-display font-semibold text-lg text-chrome-50">
                       {group.name}
