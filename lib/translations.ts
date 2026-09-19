@@ -123,8 +123,8 @@ export const translations: Record<Lang, Dict> = {
     },
     hero: {
       badge: "Ouvert au stage de fin d'études · Avril 2026",
-      titleLine1: "À la croisée du vivant,",
-      titleLine2: "du code et de la mécanique.",
+      titleLine1: "Transformer la curiosité",
+      titleLine2: "en projets.",
       subtitle:
         "Étudiant en bioingénierie — ingénierie tissulaire, implantation et biomédical. Je conçois, je code, je fabrique.",
       ctaPrimary: "Voir mes projets",
@@ -384,8 +384,8 @@ export const translations: Record<Lang, Dict> = {
     },
     hero: {
       badge: "Open to end-of-studies internship · April 2026",
-      titleLine1: "Where living matter meets",
-      titleLine2: "code and mechanics.",
+      titleLine1: "Turning curiosity",
+      titleLine2: "into projects.",
       subtitle:
         "Bioengineering student — tissue engineering, implants and biomedical devices. I design, I code, I build.",
       ctaPrimary: "See my work",
