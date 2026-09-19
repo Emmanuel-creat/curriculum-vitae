@@ -126,7 +126,7 @@ export const translations: Record<Lang, Dict> = {
       titleLine1: "Transformer la curiosité",
       titleLine2: "en projets.",
       subtitle:
-        "Étudiant en bioingénierie — ingénierie tissulaire, implantation et biomédical. Je conçois, je code, je fabrique.",
+        "Étudiant en bioingénierie · ingénierie tissulaire, implantation et biomédical. Je conçois, je code, je fabrique.",
       ctaPrimary: "Voir mes projets",
       ctaSecondary: "Me contacter",
       role: "Étudiant en bioingénierie",
@@ -147,9 +147,9 @@ export const translations: Record<Lang, Dict> = {
     },
     skills: {
       kicker: "Compétences",
-      title: "Une boîte à outils qui traverse les disciplines.",
+      title: "Un profil pluridisciplinaire orienté vers la réalisation.",
       subtitle:
-        "Rangées par thématique. Le fil rouge : passer de l'idée au prototype qui marche.",
+        "Elles reflètent une approche polyvalente allant de la compréhension d'un problème à sa conception, son expérimentation et sa mise en œuvre.",
       groups: {
         bio: {
           name: "Bio & Ingénierie tissulaire",
@@ -227,12 +227,12 @@ export const translations: Record<Lang, Dict> = {
     },
     experience: {
       kicker: "Parcours",
-      title: "Là où j'ai appris ce que je sais.",
+      title: "Les étapes qui ont construit mon parcours.",
       items: [
         {
           when: "Avr. → Août 2026",
           role: "Stagiaire R&D",
-          org: "MGA Medtech — BioMemory",
+          org: "MGA Medtech · BioMemory",
           desc: "Automatisation de bancs de test métrologiques, prototypage multi-procédés, circuits fluidiques picolitriques.",
           href: "/projects/biomemory",
         },
@@ -253,7 +253,7 @@ export const translations: Record<Lang, Dict> = {
         {
           when: "2025 → 2026",
           role: "Projet collectif M1",
-          org: "Mobilis — orthèse de poignet",
+          org: "Mobilis · orthèse de poignet",
           desc: "Conception CAO d'un dispositif modulable d'assistance/résistance pour la rééducation.",
           href: "/projects/mobilis",
         },
@@ -266,16 +266,16 @@ export const translations: Record<Lang, Dict> = {
         {
           when: "2021 → 2022",
           role: "École d'ingénieur",
-          org: "ESME Sudria — Lyon",
+          org: "ESME Sudria · Lyon",
           desc: "Physique, électrotechnique, électromagnétisme, programmation, systèmes vivants.",
         },
       ],
     },
     projects: {
       kicker: "Projets",
-      title: "Ce que j'ai conçu, codé, fabriqué.",
+      title: "Des projets de la conception à la réalisation.",
       subtitle:
-        "Sept projets, deux mondes — R&D biomédicale et code applicatif. Cliquez pour la présentation détaillée.",
+        "Sept projets illustrant mon approche de la recherche, du développement et de la création, à travers deux domaines complémentaires : la R&D biomédicale et le développement logiciel.",
       viewAll: "Voir tous les projets",
       viewProject: "Découvrir",
       tagRnd: "R&D",
@@ -291,13 +291,13 @@ export const translations: Record<Lang, Dict> = {
         biomemory: {
           tag: "R&D",
           title: "BioMemory",
-          subtitle: "MGA Medtech — Stage R&D 2026",
+          subtitle: "MGA Medtech · Stage R&D 2026",
           summary:
             "Automatisation métrologique, fluidique picolitrique, prototypage multi-procédés pour la mémoire moléculaire.",
         },
         vic2d: {
           tag: "R&D",
-          title: "VIC2D — Auto",
+          title: "VIC2D · Auto",
           subtitle: "Deep learning appliqué à la mécanique",
           summary:
             "Automatisation d'un logiciel de corrélation d'images et entraînement de réseaux de neurones sur essais mécaniques.",
@@ -305,7 +305,7 @@ export const translations: Record<Lang, Dict> = {
         symbiosuits: {
           tag: "R&D",
           title: "Symbiosuits",
-          subtitle: "Exosquelette — sport, assistance, militaire",
+          subtitle: "Exosquelette · sport, assistance, militaire",
           summary:
             "Développement d'un exosquelette : prototypage, impression 3D, usinage, site web du projet.",
         },
@@ -335,14 +335,14 @@ export const translations: Record<Lang, Dict> = {
       kicker: "Galerie",
       title: "Rendus CAO & prototypes.",
       subtitle:
-        "Une sélection de pièces conçues, imprimées, usinées, moulées — rangée par projet.",
+        "Une sélection de pièces conçues, imprimées, usinées, , rangées par projet.",
       viewAll: "Voir la galerie complète",
-      empty: "Visuels bientôt en ligne — je les ajoute au fur et à mesure.",
+      empty: "Visuels bientôt en ligne, je les ajoute au fur et à mesure.",
     },
     contact: {
       kicker: "Contact",
-      title: "Un stage, une collaboration, une question ?",
-      body: "Je réponds vite. Le plus simple, c'est l'email ou le téléphone.",
+      title: "Échangeons autour d'un projet.",
+      body: "Une opportunité de stage, une collaboration ou simplement une question ? Je suis disponible par email ou par téléphone pour en discuter.",
       email: "Écrire un email",
       call: "Appeler",
       linkedin: "LinkedIn",
@@ -387,7 +387,7 @@ export const translations: Record<Lang, Dict> = {
       titleLine1: "Turning curiosity",
       titleLine2: "into projects.",
       subtitle:
-        "Bioengineering student — tissue engineering, implants and biomedical devices. I design, I code, I build.",
+        "Bioengineering student · tissue engineering, implants and biomedical devices. I design, I code, I build.",
       ctaPrimary: "See my work",
       ctaSecondary: "Get in touch",
       role: "Bioengineering student",
@@ -396,9 +396,9 @@ export const translations: Record<Lang, Dict> = {
     about: {
       kicker: "About",
       title: "Curious, creative and driven by innovation",
-      body: "I'm Emmanuel, 23, currently in the second year of the Master's in Bioengineering of Tissues and Implants at Aix-Marseille University. What drives me above all is discovering phenomena and physical principles I don't yet know — understanding how things work and exploring the mechanisms that make them possible.",
+      body: "I'm Emmanuel, 23, currently in the second year of the Master's in Bioengineering of Tissues and Implants at Aix-Marseille University. What drives me above all is discovering phenomena and physical principles I don't yet know, understanding how things work and exploring the mechanisms that make them possible.",
       body2:
-        "Then I love trying to reproduce them, modify them, make them my own — to see how far I can go and imagine new applications. My curiosity naturally pushes me to bridge disciplines, to learn by doing, and to turn an idea into something tangible.",
+        "Then I love trying to reproduce them, modify them, make them my own, to see how far I can go and imagine new applications. My curiosity naturally pushes me to bridge disciplines, to learn by doing, and to turn an idea into something tangible.",
       quickfacts: {
         location: "Marseille, France",
         study: "M2 IEAP BTI · AMU",
@@ -408,8 +408,9 @@ export const translations: Record<Lang, Dict> = {
     },
     skills: {
       kicker: "Skills",
-      title: "A toolbox that crosses disciplines.",
-      subtitle: "Grouped by theme. The thread: turning ideas into working prototypes.",
+      title: "A cross-disciplinary profile geared toward execution.",
+      subtitle:
+        "It reflects a versatile approach, from understanding a problem to designing, experimenting and implementing it.",
       groups: {
         bio: {
           name: "Bio & Tissue engineering",
@@ -487,12 +488,12 @@ export const translations: Record<Lang, Dict> = {
     },
     experience: {
       kicker: "Journey",
-      title: "Where I've learned what I know.",
+      title: "The steps that built my path.",
       items: [
         {
           when: "Apr → Aug 2026",
           role: "R&D Intern",
-          org: "MGA Medtech — BioMemory",
+          org: "MGA Medtech · BioMemory",
           desc: "Automated metrology benches, multi-process prototyping, picoliter fluidic circuits.",
           href: "/projects/biomemory",
         },
@@ -513,7 +514,7 @@ export const translations: Record<Lang, Dict> = {
         {
           when: "2025 → 2026",
           role: "M1 team project",
-          org: "Mobilis — wrist orthosis",
+          org: "Mobilis · wrist orthosis",
           desc: "CAD design of a modular assist/resist device for rehabilitation.",
           href: "/projects/mobilis",
         },
@@ -526,16 +527,16 @@ export const translations: Record<Lang, Dict> = {
         {
           when: "2021 → 2022",
           role: "Engineering school",
-          org: "ESME Sudria — Lyon",
+          org: "ESME Sudria · Lyon",
           desc: "Physics, electrical engineering, electromagnetism, programming, living systems.",
         },
       ],
     },
     projects: {
       kicker: "Projects",
-      title: "What I've designed, coded, built.",
+      title: "Projects from concept to execution.",
       subtitle:
-        "Seven projects, two worlds — biomedical R&D and application code. Click for the full case study.",
+        "Seven projects showcasing my approach to research, development and creation, across two complementary domains: biomedical R&D and software development.",
       viewAll: "See all projects",
       viewProject: "Explore",
       tagRnd: "R&D",
@@ -551,13 +552,13 @@ export const translations: Record<Lang, Dict> = {
         biomemory: {
           tag: "R&D",
           title: "BioMemory",
-          subtitle: "MGA Medtech — R&D Internship 2026",
+          subtitle: "MGA Medtech · R&D Internship 2026",
           summary:
             "Metrology automation, picoliter fluidics, multi-process prototyping for molecular memory.",
         },
         vic2d: {
           tag: "R&D",
-          title: "VIC2D — Auto",
+          title: "VIC2D · Auto",
           subtitle: "Deep learning applied to mechanics",
           summary:
             "Automating an image-correlation software and training neural networks on mechanical test data.",
@@ -565,7 +566,7 @@ export const translations: Record<Lang, Dict> = {
         symbiosuits: {
           tag: "R&D",
           title: "Symbiosuits",
-          subtitle: "Exoskeleton — sport, assist, military",
+          subtitle: "Exoskeleton · sport, assist, military",
           summary:
             "Building an exoskeleton: prototyping, 3D printing, machining, project website.",
         },
@@ -595,14 +596,14 @@ export const translations: Record<Lang, Dict> = {
       kicker: "Gallery",
       title: "CAD renders & prototypes.",
       subtitle:
-        "A selection of parts I designed, printed, machined, molded — grouped by project.",
+        "A selection of parts I designed, printed, machined, , grouped by project.",
       viewAll: "See the full gallery",
-      empty: "Visuals coming soon — I add them as they come.",
+      empty: "Visuals coming soon, I add them as they come.",
     },
     contact: {
       kicker: "Contact",
-      title: "Internship, collaboration, question?",
-      body: "Quick to answer. Easiest is email or phone.",
+      title: "Let's talk about a project.",
+      body: "An internship opportunity, a collaboration, or simply a question? I'm available by email or phone to discuss.",
       email: "Send an email",
       call: "Call",
       linkedin: "LinkedIn",

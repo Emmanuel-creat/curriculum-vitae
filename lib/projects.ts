@@ -54,14 +54,14 @@ export const projectContent: Record<Slug, Record<"fr" | "en", ProjectContent>> =
         "La rééducation du poignet après fracture est souvent linéaire : on passe d'une immobilisation totale à des exercices standard, sans progressivité fine. Les orthèses existantes sont soit passives (soutien), soit très spécialisées (une seule fonction). Résultat : plusieurs dispositifs, plusieurs coûts, une observance en dents de scie.",
       contribution: [
         "Conception CAO complète sous SolidWorks (structure, articulation modulaire, points d'ancrage bandes élastiques).",
-        "Recherche du bon compromis entre rigidité, confort et modularité — plusieurs itérations imprimées et testées.",
+        "Recherche du bon compromis entre rigidité, confort et modularité, plusieurs itérations imprimées et testées.",
         "Choix des matériaux et des procédés d'impression pour un prototype portable et lavable.",
         "Rédaction de la partie technique du dossier de candidature au programme PEPITE.",
       ],
       results: [
         "Prototype fonctionnel : le poignet passe en autonomie de l'assistance à la résistance en changeant simplement les modules.",
         "Dossier PEPITE monté et déposé.",
-        "Décision collective de ne pas poursuivre l'aventure entrepreneuriale — chacun est parti dans une direction différente.",
+        "Décision collective de ne pas poursuivre l'aventure entrepreneuriale, chacun est parti dans une direction différente.",
       ],
       stack: ["SolidWorks", "Impression 3D (FDM)", "Bandes élastiques calibrées", "Prototypage itératif"],
       links: [],
@@ -78,14 +78,14 @@ export const projectContent: Record<Slug, Record<"fr" | "en", ProjectContent>> =
         "Post-fracture wrist rehabilitation is often linear: patients jump from full immobilization to standardized exercises, with no fine progression. Existing orthoses are either passive (support) or highly specialized (one function). The result: multiple devices, multiple costs, uneven compliance.",
       contribution: [
         "Full CAD design in SolidWorks (structure, modular joint, elastic-band anchor points).",
-        "Iterating for the right trade-off between rigidity, comfort and modularity — several 3D-printed test parts.",
+        "Iterating for the right trade-off between rigidity, comfort and modularity, several 3D-printed test parts.",
         "Material and process selection for a wearable, washable prototype.",
         "Wrote the technical part of the PEPITE application file.",
       ],
       results: [
         "Working prototype: the wrist moves autonomously from assist to resist by swapping modules.",
         "PEPITE application submitted.",
-        "Collective decision not to pursue the venture — each teammate went in a different direction.",
+        "Collective decision not to pursue the venture, each teammate went in a different direction.",
       ],
       stack: ["SolidWorks", "3D printing (FDM)", "Calibrated elastic bands", "Iterative prototyping"],
       links: [],
@@ -94,14 +94,14 @@ export const projectContent: Record<Slug, Record<"fr" | "en", ProjectContent>> =
   biomemory: {
     fr: {
       title: "BioMemory",
-      subtitle: "Stage R&D — MGA Medtech",
+      subtitle: "Stage R&D · MGA Medtech",
       period: "Avril → Août 2026",
       role: "Stagiaire R&D · Équipe de développement interne",
       status: "Stage à venir",
       pitch:
         "Participer à la R&D d'une technologie de rupture : stocker de l'information dans l'ADN, à l'échelle industrielle. Là où le vivant devient le disque dur du futur.",
       problem:
-        "Le monde produit plus de données qu'il ne peut en stocker durablement. Les supports magnétiques et flash se dégradent, consomment, occupent. BioMemory propose une réponse : encoder l'information dans des molécules d'ADN, denses, stables sur des millénaires, et alignées avec la biologie. Pour passer du concept au produit, il faut construire toute la chaîne physique qui dépose, mesure, lave, sèche — à l'échelle du picolitre.",
+        "Le monde produit plus de données qu'il ne peut en stocker durablement. Les supports magnétiques et flash se dégradent, consomment, occupent. BioMemory propose une réponse : encoder l'information dans des molécules d'ADN, denses, stables sur des millénaires, et alignées avec la biologie. Pour passer du concept au produit, il faut construire toute la chaîne physique qui dépose, mesure, lave, sèche, à l'échelle du picolitre.",
       contribution: [
         "Développement de scripts Python pour automatiser des bancs de test métrologiques (pilotage d'axes, acquisition, traitement).",
         "Intégration d'une chaîne complète capteur → interface CAN → ordinateur.",
@@ -127,19 +127,19 @@ export const projectContent: Record<Slug, Record<"fr" | "en", ProjectContent>> =
       ],
       links: [
         { label: "BioMemory (site officiel)", href: "https://www.biomemory.com" },
-        { label: "MGA Medtech", href: "https://www.mgamedtech.com" },
+        { label: "MGA Medtech", href: "https://www.maisonmga.fr/" },
       ],
     },
     en: {
       title: "BioMemory",
-      subtitle: "R&D Internship — MGA Medtech",
+      subtitle: "R&D Internship · MGA Medtech",
       period: "April → August 2026",
       role: "R&D intern · Internal development team",
       status: "Upcoming",
       pitch:
         "Joining the R&D of a breakthrough technology: storing information in DNA at industrial scale. Where the living becomes the hard drive of the future.",
       problem:
-        "The world produces more data than it can durably store. Magnetic and flash media degrade, consume energy, take up space. BioMemory proposes encoding information into DNA — dense, stable over millennia, biology-aligned. Getting from concept to product means building the full physical chain that dispenses, measures, washes, dries — at picoliter scale.",
+        "The world produces more data than it can durably store. Magnetic and flash media degrade, consume energy, take up space. BioMemory proposes encoding information into DNA, dense, stable over millennia, biology-aligned. Getting from concept to product means building the full physical chain that dispenses, measures, washes, dries, at picoliter scale.",
       contribution: [
         "Python scripts to automate metrology test benches (axis control, acquisition, processing).",
         "Integration of a full sensor → CAN interface → computer chain.",
@@ -165,19 +165,19 @@ export const projectContent: Record<Slug, Record<"fr" | "en", ProjectContent>> =
       ],
       links: [
         { label: "BioMemory (official)", href: "https://www.biomemory.com" },
-        { label: "MGA Medtech", href: "https://www.mgamedtech.com" },
+        { label: "MGA Medtech", href: "https://www.maisonmga.fr/" },
       ],
     },
   },
   vic2d: {
     fr: {
-      title: "VIC2D — Automatisation",
+      title: "VIC2D · Automatisation",
       subtitle: "Deep learning appliqué à l'analyse d'essais mécaniques",
       period: "Avril 2025",
       role: "Stagiaire R&D · Laboratoire GIBOC (Sainte-Marguerite)",
       status: "Terminé · Rapport disponible sur demande",
       pitch:
-        "Faire parler des images de tendons et d'os qui se déforment sous contrainte — sans qu'un humain doive cliquer pendant des heures. Un pipeline logiciel qui prend le relais des essais mécaniques.",
+        "Faire parler des images de tendons et d'os qui se déforment sous contrainte, sans qu'un humain doive cliquer pendant des heures. Un pipeline logiciel qui prend le relais des essais mécaniques.",
       problem:
         "VIC2D est un logiciel commercial d'analyse de corrélation d'images (Digital Image Correlation) très utilisé en biomécanique. Puissant, mais chronophage : chaque essai demande de nombreux réglages, une intervention humaine à chaque étape, et l'exploitation des données prend souvent plus de temps que l'essai lui-même. Le laboratoire GIBOC voulait une chaîne qui automatise ce qui peut l'être et sort des indicateurs comparables entre essais.",
       contribution: [
@@ -195,13 +195,13 @@ export const projectContent: Record<Slug, Record<"fr" | "en", ProjectContent>> =
       links: [],
     },
     en: {
-      title: "VIC2D — Automation",
+      title: "VIC2D · Automation",
       subtitle: "Deep learning applied to mechanical test analysis",
       period: "April 2025",
       role: "R&D intern · GIBOC lab (Sainte-Marguerite)",
       status: "Completed · Report available on request",
       pitch:
-        "Make images of tendons and bones under load speak — without a human clicking for hours. A software pipeline that takes over the mechanical test workflow.",
+        "Make images of tendons and bones under load speak, without a human clicking for hours. A software pipeline that takes over the mechanical test workflow.",
       problem:
         "VIC2D is a commercial Digital Image Correlation software widely used in biomechanics. Powerful, but time-consuming: each test requires many manual settings, human intervention at each step, and data exploitation often takes longer than the test itself. The GIBOC lab wanted a pipeline that automates what can be automated and outputs comparable indicators across tests.",
       contribution: [
@@ -222,14 +222,14 @@ export const projectContent: Record<Slug, Record<"fr" | "en", ProjectContent>> =
   symbiosuits: {
     fr: {
       title: "Symbiosuits",
-      subtitle: "Exosquelette — sport, assistance, militaire",
+      subtitle: "Exosquelette · sport, assistance, militaire",
       period: "2023 → 2024 · En pause",
       role: "Associé fondateur · Fabrication et web",
-      status: "En pause — reprise prévue",
+      status: "En pause, reprise prévue",
       pitch:
-        "Un exosquelette qui augmente le corps humain — pour l'athlète, pour le travailleur qui porte lourd, pour le soldat qui marche loin. Fabriqué à la main, pensé pour durer.",
+        "Un exosquelette qui augmente le corps humain, pour l'athlète, pour le travailleur qui porte lourd, pour le soldat qui marche loin. Fabriqué à la main, pensé pour durer.",
       problem:
-        "Les exosquelettes existants sont soit médicaux et hors de prix, soit industriels et rigides. Il manque une génération intermédiaire : robuste, modulaire, adressable au sport de haut niveau, à l'assistance physique du travailleur, et à l'usage militaire — trois marchés qui partagent les mêmes contraintes de fiabilité, de poids et d'endurance.",
+        "Les exosquelettes existants sont soit médicaux et hors de prix, soit industriels et rigides. Il manque une génération intermédiaire : robuste, modulaire, adressable au sport de haut niveau, à l'assistance physique du travailleur, et à l'usage militaire, trois marchés qui partagent les mêmes contraintes de fiabilité, de poids et d'endurance.",
       contribution: [
         "Fabrication de pièces prototypes par impression 3D et usinage.",
         "Création complète du site web du projet.",
@@ -238,21 +238,21 @@ export const projectContent: Record<Slug, Record<"fr" | "en", ProjectContent>> =
       results: [
         "Premières pièces prototypes fonctionnelles.",
         "Vitrine web du projet en ligne.",
-        "Le projet est en pause volontaire — il reprendra plus tard, avec l'expérience accumulée depuis.",
+        "Le projet est en pause volontaire, il reprendra plus tard, avec l'expérience accumulée depuis.",
       ],
       stack: ["Impression 3D", "Usinage", "SolidWorks", "HTML / CSS / JS"],
       links: [],
     },
     en: {
       title: "Symbiosuits",
-      subtitle: "Exoskeleton — sport, assist, military",
+      subtitle: "Exoskeleton · sport, assist, military",
       period: "2023 → 2024 · On hold",
       role: "Co-founder · Manufacturing and web",
-      status: "On hold — will resume",
+      status: "On hold, will resume",
       pitch:
-        "An exoskeleton that augments the human body — for athletes, for workers carrying loads, for soldiers walking far. Hand-built, made to last.",
+        "An exoskeleton that augments the human body, for athletes, for workers carrying loads, for soldiers walking far. Hand-built, made to last.",
       problem:
-        "Existing exoskeletons are either medical and prohibitively expensive, or industrial and rigid. A middle generation is missing: robust, modular, addressable to elite sport, physical assist for workers, and military use — three markets that share the same reliability, weight and endurance constraints.",
+        "Existing exoskeletons are either medical and prohibitively expensive, or industrial and rigid. A middle generation is missing: robust, modular, addressable to elite sport, physical assist for workers, and military use, three markets that share the same reliability, weight and endurance constraints.",
       contribution: [
         "Prototype parts manufactured via 3D printing and machining.",
         "Full project website built from scratch.",
@@ -261,7 +261,7 @@ export const projectContent: Record<Slug, Record<"fr" | "en", ProjectContent>> =
       results: [
         "First functional prototype parts.",
         "Project website online.",
-        "Project intentionally paused — will resume later, with everything learned since.",
+        "Project intentionally paused, will resume later, with everything learned since.",
       ],
       stack: ["3D printing", "Machining", "SolidWorks", "HTML / CSS / JS"],
       links: [],

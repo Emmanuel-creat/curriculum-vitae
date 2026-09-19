@@ -40,7 +40,7 @@ export default function GalleryPage() {
                       className="text-xs font-mono uppercase tracking-widest mb-2"
                       style={{ color: meta.accent }}
                     >
-                      — {card.subtitle}
+                      · {card.subtitle}
                     </div>
                     <h2 className="font-display font-semibold text-3xl md:text-4xl text-chrome-50">
                       {card.title}

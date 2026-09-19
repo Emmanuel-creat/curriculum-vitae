@@ -1,7 +1,7 @@
 import ProjectPage from "@/components/ProjectPage";
 
 export const metadata = {
-  title: "Safe Screen — Emmanuel Bailly",
+  title: "Safe Screen · Emmanuel Bailly",
   description: "Projet en préparation.",
 };
 

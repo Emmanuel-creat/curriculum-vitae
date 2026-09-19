@@ -1,7 +1,7 @@
 import ProjectPage from "@/components/ProjectPage";
 
 export const metadata = {
-  title: "Arcade Online — Emmanuel Bailly",
+  title: "Arcade Online · Emmanuel Bailly",
   description: "Plateforme de jeux multijoueurs à salons privés.",
 };
 

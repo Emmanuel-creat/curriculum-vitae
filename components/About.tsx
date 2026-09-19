@@ -24,7 +24,7 @@ export default function About() {
             <div className="brick rounded-2xl overflow-hidden aspect-[3/4] relative group">
               <img
                 src="/images/iris.jpg"
-                alt="Iris — regard curieux"
+                alt="Iris · regard curieux"
                 className="w-full h-full object-cover grayscale-[15%] group-hover:grayscale-0 transition-all duration-700"
                 loading="lazy"
               />

@@ -73,7 +73,7 @@ export default function Hero() {
               <div className="brick rounded-[2rem] overflow-hidden h-full relative">
                 <img
                   src="/images/dna.jpg"
-                  alt="ADN — bio-ingénierie"
+                  alt="ADN · bio-ingénierie"
                   className="w-full h-full object-cover"
                   loading="eager"
                 />

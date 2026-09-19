@@ -5,12 +5,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Emmanuel Bailly — Ingénieur R&D",
+  title: "Emmanuel Bailly · Ingénieur R&D",
   description:
     "Portfolio d'Emmanuel Bailly, étudiant en bio-ingénierie des tissus et des implants. Projets R&D, code, CAO, fabrication.",
   metadataBase: new URL("https://portfolio-emmanuel.onrender.com"),
   openGraph: {
-    title: "Emmanuel Bailly — Ingénieur R&D",
+    title: "Emmanuel Bailly · Ingénieur R&D",
     description:
       "À la croisée du vivant, du code et de la mécanique. Étudiant en bioingénierie, ingénierie tissulaire, biomédical.",
     type: "website",
