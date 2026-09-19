@@ -69,12 +69,11 @@ export default function Skills() {
                 />
                 <div className="relative flex items-start justify-between mb-4">
                   <div>
-                    <div
-                      className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest mb-2"
-                      style={{ color: meta.color }}
-                    >
+                    <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-widest mb-2 text-chrome-300">
                       <meta.Icon size={18} />
-                      {String(i + 1).padStart(2, "0")}
+                      <span className="text-chrome-500">
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
                     </div>
                     <h3 className="font-display font-semibold text-lg text-chrome-50">
                       {group.name}
