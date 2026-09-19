@@ -122,7 +122,7 @@ export const translations: Record<Lang, Dict> = {
       cv: "CV",
     },
     hero: {
-      badge: "Ouvert au stage de fin d'études · Avril 2026",
+      badge: "Ouvert au stage de fin d'études · Février 2027",
       titleLine1: "Transformer la curiosité",
       titleLine2: "en projets.",
       subtitle:
@@ -141,7 +141,7 @@ export const translations: Record<Lang, Dict> = {
       quickfacts: {
         location: "Marseille, France",
         study: "Master 2 IEAP BTI · AMU",
-        available: "Stage · Avril → Août 2026",
+        available: "Stage · Février → Juillet 2027",
         stack: "Python · R · SolidWorks · Fusion 360 · PyTorch",
       },
     },
@@ -230,7 +230,7 @@ export const translations: Record<Lang, Dict> = {
       title: "Les étapes qui ont construit mon parcours.",
       items: [
         {
-          when: "Avr. → Août 2026",
+          when: "Fév. → Juil. 2027",
           role: "Stagiaire R&D",
           org: "MGA Medtech · BioMemory",
           desc: "Automatisation de bancs de test métrologiques, prototypage multi-procédés, circuits fluidiques picolitriques.",
@@ -383,7 +383,7 @@ export const translations: Record<Lang, Dict> = {
       cv: "Résumé",
     },
     hero: {
-      badge: "Open to end-of-studies internship · April 2026",
+      badge: "Open to end-of-studies internship · February 2027",
       titleLine1: "Turning curiosity",
       titleLine2: "into projects.",
       subtitle:
@@ -402,7 +402,7 @@ export const translations: Record<Lang, Dict> = {
       quickfacts: {
         location: "Marseille, France",
         study: "M2 IEAP BTI · AMU",
-        available: "Internship · Apr → Aug 2026",
+        available: "Internship · Feb → Jul 2027",
         stack: "Python · R · SolidWorks · Fusion 360 · PyTorch",
       },
     },
@@ -491,7 +491,7 @@ export const translations: Record<Lang, Dict> = {
       title: "The steps that built my path.",
       items: [
         {
-          when: "Apr → Aug 2026",
+          when: "Feb → Jul 2027",
           role: "R&D Intern",
           org: "MGA Medtech · BioMemory",
           desc: "Automated metrology benches, multi-process prototyping, picoliter fluidic circuits.",
