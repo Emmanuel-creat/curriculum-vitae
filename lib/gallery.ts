@@ -42,13 +42,10 @@ const sy = (src: string, fr: string, en: string, kind: "cad" | "photo" = "cad"):
 export const symbiosuitsImages: GalleryImage[] = [
   sy("rendu-iso", "Exosquelette complet, vue d'ensemble", "Full exoskeleton, overview"),
   sy("rendu-marche", "En phase de marche", "Walking pose"),
-  sy("rendu-dos", "Vue arrière : pack dorsal et vérins de cheville", "Back view: back pack and ankle actuators"),
   sy("rendu-eclate", "Vue éclatée des sous-ensembles", "Exploded view of the sub-assemblies"),
   sy("rendu-hanche", "Moteur de hanche et support ajouré", "Hip motor and lightened bracket"),
   sy("rendu-genou", "Genou : moteur, genouillère, bras en treillis", "Knee: motor, knee cap, truss strut"),
   sy("rendu-mollet", "Vérins de cheville à soufflet", "Bellows ankle actuators"),
-  sy("rendu-pack", "Pack dorsal : batterie et unité de contrôle", "Back pack: battery and control unit"),
-  sy("rendu-botte", "Bottes renforcées et chevilles", "Reinforced boots and ankles"),
   sy("plan-profil", "Plan de profil coté", "Dimensioned side view"),
   sy("plan-face", "Plan de face coté", "Dimensioned front view"),
   sy("plan-dos", "Plan arrière coté", "Dimensioned back view"),
