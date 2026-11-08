@@ -57,6 +57,31 @@ export const symbiosuitsImages: GalleryImage[] = [
   sy("plan-pack", "Détail du pack dorsal", "Back pack detail"),
 ];
 
+const mo = (src: string, fr: string, en: string, kind: "cad" | "photo" = "cad"): GalleryImage => ({
+  src: `/images/mobilis/${src}.jpg`,
+  alt: { fr, en },
+  kind,
+});
+
+export const mobilisImages: GalleryImage[] = [
+  mo("prototype-porte-face", "Prototype porté, vue de face", "Prototype worn, front view", "photo"),
+  mo("prototype-porte-dessus", "Prototype porté, vue de dessus", "Prototype worn, top view", "photo"),
+  mo("dispositif-cao", "Le dispositif en CAO et ses composants", "The device in CAD and its parts"),
+  mo("croquis", "Croquis de principe du dispositif", "Concept sketch of the device"),
+  mo("simulation-anneau", "Simulation du bracelet en PLA : déplacements", "PLA cuff simulation: displacements"),
+  mo("simulation-poignee", "Simulation de la poignée en TPU : contraintes de von Mises", "TPU handle simulation: von Mises stress"),
+  mo("simulation-fatigue", "Étude de fatigue de la poignée", "Handle fatigue study"),
+  mo("courbe-fatigue-tpu", "Courbe de fatigue du TPU (loi de Basquin)", "TPU fatigue curve (Basquin law)"),
+  mo("protocole", "Protocole de l'étude expérimentale", "Experimental study protocol"),
+  mo("marqueurs", "Analyse cinématique par marqueurs", "Marker based kinematic analysis"),
+  mo("resultats-amplitude", "Résultats : amplitude articulaire", "Results: range of motion"),
+  mo("resultats-vitesse", "Résultats : vitesse angulaire", "Results: angular speed"),
+  mo("resultats-fsus", "Résultats : utilisabilité F-SUS", "Results: F-SUS usability"),
+  mo("emg", "Perspective : mesures EMG", "Outlook: EMG measurements"),
+  mo("contexte-fractures", "Contexte : fractures du poignet", "Context: wrist fractures"),
+  mo("planning", "Planning du projet", "Project schedule"),
+];
+
 // Images réelles par projet. Un projet absent garde les cases "bientôt disponible".
 export const galleryImages: Record<string, GalleryImage[]> = {
   "lesions-carieuses": [
@@ -78,6 +103,7 @@ export const galleryImages: Record<string, GalleryImage[]> = {
     p("croquis-3", "Croquis : vue isométrique et clips", "Sketch: isometric view and clips"),
     p("croquis-2", "Croquis : disque semi-rigide et enveloppe latex", "Sketch: semi-rigid disc and latex envelope"),
   ],
+  mobilis: mobilisImages,
   symbiosuits: symbiosuitsImages,
   biomemory: biomemoryImages,
 };

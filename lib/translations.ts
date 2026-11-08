@@ -259,10 +259,10 @@ export const translations: Record<Lang, Dict> = {
           href: "/projects/symbiosuits",
         },
         {
-          when: "2025 → 2026",
+          when: "Sept. 2025 → Mars 2026",
           role: "Projet collectif M1",
           org: "Mobilis · orthèse de poignet",
-          desc: "Conception CAO d'un dispositif modulable d'assistance/résistance pour la rééducation.",
+          desc: "Conception CAO, simulation et test sur volontaires d'un dispositif modulable d'assistance et de résistance pour la rééducation.",
           href: "/projects/mobilis",
         },
         {
@@ -534,10 +534,10 @@ export const translations: Record<Lang, Dict> = {
           href: "/projects/symbiosuits",
         },
         {
-          when: "2025 → 2026",
+          when: "Sept 2025 → Mar 2026",
           role: "M1 team project",
           org: "Mobilis · wrist orthosis",
-          desc: "CAD design of a modular assist/resist device for rehabilitation.",
+          desc: "CAD, simulation and volunteer testing of a modular assist and resist device for rehabilitation.",
           href: "/projects/mobilis",
         },
         {
