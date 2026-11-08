@@ -3,11 +3,12 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useI18n } from "@/lib/i18n";
+import SafeImg from "./SafeImg";
 import { projectContent, projectOrder, ProjectSlug } from "@/lib/projects";
 
-type Props = { slug: ProjectSlug; heroImage?: string; extra?: React.ReactNode };
+type Props = { slug: ProjectSlug; heroImage?: string; heroFallback?: string; extra?: React.ReactNode };
 
-export default function ProjectPage({ slug, heroImage, extra }: Props) {
+export default function ProjectPage({ slug, heroImage, heroFallback, extra }: Props) {
   const { t, lang } = useI18n();
   const data = projectContent[slug][lang];
   const meta = projectOrder.find((p) => p.slug === slug)!;
@@ -82,8 +83,9 @@ export default function ProjectPage({ slug, heroImage, extra }: Props) {
                   style={{ background: meta.accent }}
                 />
                 <div className="brick overflow-hidden aspect-[4/5] relative">
-                  <img
+                  <SafeImg
                     src={heroImage}
+                    fallback={heroFallback}
                     alt={data.title}
                     className="w-full h-full object-cover"
                     loading="eager"

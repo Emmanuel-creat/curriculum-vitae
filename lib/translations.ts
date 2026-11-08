@@ -241,7 +241,7 @@ export const translations: Record<Lang, Dict> = {
           when: "Avr. → Août 2026",
           role: "Stagiaire R&D",
           org: "MGA Medtech · BioMemory",
-          desc: "Automatisation de bancs de test métrologiques, prototypage multi-procédés, circuits fluidiques picolitriques.",
+          desc: "Développement matériel pour le stockage de données sur ADN : automatisation de bancs de test, fluidique, prototypage.",
           href: "/projects/biomemory",
         },
         {
@@ -308,7 +308,7 @@ export const translations: Record<Lang, Dict> = {
           title: "BioMemory",
           subtitle: "MGA Medtech · Stage R&D 2026",
           summary:
-            "Automatisation métrologique, fluidique picolitrique, prototypage multi-procédés pour la mémoire moléculaire.",
+            "Stockage de données sur ADN : automatisation de bancs, fluidique et prototypage pour une technologie de rupture.",
         },
         vic2d: {
           tag: "R&D",
@@ -516,7 +516,7 @@ export const translations: Record<Lang, Dict> = {
           when: "Apr → Aug 2026",
           role: "R&D Intern",
           org: "MGA Medtech · BioMemory",
-          desc: "Automated metrology benches, multi-process prototyping, picoliter fluidic circuits.",
+          desc: "Hardware development for DNA data storage: test bench automation, fluidics, prototyping.",
           href: "/projects/biomemory",
         },
         {
@@ -583,7 +583,7 @@ export const translations: Record<Lang, Dict> = {
           title: "BioMemory",
           subtitle: "MGA Medtech · R&D Internship 2026",
           summary:
-            "Metrology automation, picoliter fluidics, multi-process prototyping for molecular memory.",
+            "DNA data storage: test bench automation, fluidics and prototyping for a breakthrough technology.",
         },
         vic2d: {
           tag: "R&D",
