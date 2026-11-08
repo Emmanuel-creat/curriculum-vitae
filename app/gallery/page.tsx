@@ -8,7 +8,7 @@ import SectionHeader from "@/components/SectionHeader";
 import ImageGrid from "@/components/ImageGrid";
 import { galleryImages } from "@/lib/gallery";
 
-const R_AND_D = ["lesions-carieuses", "mobilis", "biomemory", "vic2d", "symbiosuits"] as const;
+const R_AND_D = ["biomemory", "lesions-carieuses", "mobilis", "vic2d", "symbiosuits"] as const;
 
 export default function GalleryPage() {
   const { t, dict, lang } = useI18n();
