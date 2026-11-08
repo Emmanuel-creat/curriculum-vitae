@@ -53,11 +53,6 @@ export default function MobilisShowcase() {
         }
       >
         <Figure img={{ src: `${IMG}/dispositif-cao.jpg`, fr: "Modèle CAO annoté du dispositif Mobilis", en: "Annotated CAD model of the Mobilis device", light: true }} lang={lang} wide />
-        <div className="mt-4 grid gap-4 sm:grid-cols-3">
-          <Figure img={{ src: `${IMG}/prototype-porte-face.jpg`, fr: "Prototype porté, vue de face", en: "Prototype worn, front view" }} lang={lang} tall />
-          <Figure img={{ src: `${IMG}/prototype-porte-dessus.jpg`, fr: "Prototype porté, vue de dessus", en: "Prototype worn, top view" }} lang={lang} tall />
-          <Figure img={{ src: `${IMG}/croquis.jpg`, fr: "Croquis de recherche", en: "Research sketch", light: true }} lang={lang} tall />
-        </div>
         <div className="mt-6 brick overflow-hidden">
           <div className="grid grid-cols-[2.5rem_1fr_1fr] text-[10px] uppercase tracking-[0.2em] font-mono text-chrome-500 px-4 py-3 border-b border-white/5">
             <span>{fr ? "Rep." : "Ref."}</span>

@@ -64,10 +64,7 @@ const mo = (src: string, fr: string, en: string, kind: "cad" | "photo" = "cad"):
 });
 
 export const mobilisImages: GalleryImage[] = [
-  mo("prototype-porte-face", "Prototype porté, vue de face", "Prototype worn, front view", "photo"),
-  mo("prototype-porte-dessus", "Prototype porté, vue de dessus", "Prototype worn, top view", "photo"),
   mo("dispositif-cao", "Le dispositif en CAO et ses composants", "The device in CAD and its parts"),
-  mo("croquis", "Croquis de principe du dispositif", "Concept sketch of the device"),
   mo("simulation-anneau", "Simulation du bracelet en PLA : déplacements", "PLA cuff simulation: displacements"),
   mo("simulation-poignee", "Simulation de la poignée en TPU : contraintes de von Mises", "TPU handle simulation: von Mises stress"),
   mo("simulation-fatigue", "Étude de fatigue de la poignée", "Handle fatigue study"),

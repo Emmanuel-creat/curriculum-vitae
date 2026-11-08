@@ -11,8 +11,7 @@ export default function Page() {
   return (
     <ProjectPage
       slug="mobilis"
-      heroImage="/images/mobilis/prototype-porte-face.jpg"
-      heroFallback="/images/anatomy.jpg"
+      heroImage="/images/anatomy.jpg"
       extra={<MobilisShowcase />}
     />
   );
