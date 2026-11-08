@@ -42,15 +42,22 @@ const sy = (src: string, fr: string, en: string, kind: "cad" | "photo" = "cad"):
 export const symbiosuitsImages: GalleryImage[] = [
   sy("rendu-iso", "Exosquelette complet, vue d'ensemble", "Full exoskeleton, overview"),
   sy("rendu-marche", "En phase de marche", "Walking pose"),
-  sy("rendu-face", "Vue de face", "Front view"),
-  sy("rendu-dos", "Vue arrière : unité de contrôle et batterie", "Back view: control unit and battery"),
-  sy("rendu-genou", "Gros plan sur les genoux", "Knee close-up"),
+  sy("rendu-dos", "Vue arrière : pack dorsal et vérins de cheville", "Back view: back pack and ankle actuators"),
+  sy("rendu-eclate", "Vue éclatée des sous-ensembles", "Exploded view of the sub-assemblies"),
+  sy("rendu-hanche", "Moteur de hanche et support ajouré", "Hip motor and lightened bracket"),
+  sy("rendu-genou", "Genou : moteur, genouillère, bras en treillis", "Knee: motor, knee cap, truss strut"),
+  sy("rendu-mollet", "Vérins de cheville à soufflet", "Bellows ankle actuators"),
+  sy("rendu-pack", "Pack dorsal : batterie et unité de contrôle", "Back pack: battery and control unit"),
+  sy("rendu-botte", "Bottes renforcées et chevilles", "Reinforced boots and ankles"),
   sy("plan-profil", "Plan de profil coté", "Dimensioned side view"),
   sy("plan-face", "Plan de face coté", "Dimensioned front view"),
   sy("plan-dos", "Plan arrière coté", "Dimensioned back view"),
   sy("plan-dessus", "Plan de dessus coté", "Dimensioned top view"),
-  sy("plan-genou", "Détail de l'articulation du genou", "Knee joint detail"),
-  sy("plan-ceinture", "Détail de la ceinture, vue arrière", "Belt detail, back view"),
+  sy("plan-eclate", "Plan en vue éclatée", "Exploded view drawing"),
+  sy("plan-hanche", "Détail de la hanche", "Hip detail"),
+  sy("plan-genou", "Détail du genou", "Knee detail"),
+  sy("plan-botte", "Détail de la botte", "Boot detail"),
+  sy("plan-pack", "Détail du pack dorsal", "Back pack detail"),
 ];
 
 // Images réelles par projet. Un projet absent garde les cases "bientôt disponible".

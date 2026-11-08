@@ -8,17 +8,18 @@ import CadSheet from "./CadSheet";
 const ACCENT = "#fb923c";
 
 const STL = [
-  { file: "symbiosuits_exosquelette_debout.stl", fr: "Assemblage complet (debout)", en: "Full assembly (standing)", kb: 866 },
-  { file: "ceinture.stl", fr: "Ceinture ventrale", en: "Waist belt", kb: 26 },
-  { file: "unite_controle.stl", fr: "Unité de contrôle", en: "Control unit", kb: 1 },
-  { file: "batterie.stl", fr: "Batterie", en: "Battery", kb: 1 },
-  { file: "support_hanche.stl", fr: "Support de hanche", en: "Hip bracket", kb: 45 },
-  { file: "articulation_hanche.stl", fr: "Articulation de hanche", en: "Hip joint", kb: 25 },
-  { file: "segment_cuisse.stl", fr: "Segment de cuisse (rail, manchette, actionneur)", en: "Thigh segment (rail, cuff, actuator)", kb: 125 },
-  { file: "articulation_genou.stl", fr: "Articulation de genou", en: "Knee joint", kb: 21 },
-  { file: "segment_jambe.stl", fr: "Segment de jambe (rail, manchette, actionneur)", en: "Shank segment (rail, cuff, actuator)", kb: 144 },
-  { file: "articulation_cheville.stl", fr: "Articulation de cheville", en: "Ankle joint", kb: 14 },
-  { file: "semelle.stl", fr: "Semelle instrumentée", en: "Instrumented sole", kb: 44 },
+  { file: "symbiosuits_exosquelette_complet.zip", fr: "Assemblage complet, debout (STL compressé)", en: "Full assembly, standing (zipped STL)", kb: 5263 },
+  { file: "pack_dorsal.stl", fr: "Pack dorsal : batterie, unité de contrôle, poignée", en: "Back pack: battery, control unit, handle", kb: 239 },
+  { file: "ceinture_bassin.stl", fr: "Ceinture, plaques ventrale, lombaire et ailes de hanche", en: "Belt, front, lumbar and hip wing plates", kb: 1704 },
+  { file: "moteur_hanche.stl", fr: "Moteur couple de hanche", en: "Hip torque motor", kb: 268 },
+  { file: "structure_cuisse.stl", fr: "Bras de cuisse, blindages, sangles", en: "Thigh strut, armor, straps", kb: 1694 },
+  { file: "moteur_genou.stl", fr: "Moteur de genou", en: "Knee motor", kb: 252 },
+  { file: "genouillere.stl", fr: "Genouillère blindée et biellettes", en: "Armored knee cap and links", kb: 537 },
+  { file: "structure_jambe.stl", fr: "Bras de jambe, protège-tibia, manchette", en: "Shank strut, shin guard, cuff", kb: 1179 },
+  { file: "verin_cheville.stl", fr: "Vérin électrique de cheville", en: "Electric ankle actuator", kb: 461 },
+  { file: "articulation_cheville.stl", fr: "Articulation de cheville", en: "Ankle joint", kb: 25 },
+  { file: "botte.stl", fr: "Botte renforcée et semelle instrumentée", en: "Reinforced boot and instrumented sole", kb: 1372 },
+  { file: "cablage.stl", fr: "Câblage", en: "Cabling", kb: 248 },
 ];
 
 export default function SymbiosuitsDesign() {
@@ -27,9 +28,16 @@ export default function SymbiosuitsDesign() {
 
   const renders = [
     { src: "/images/symbiosuits/rendu-marche.jpg", fr: "En phase de marche : hanche droite fléchie, genou en flexion", en: "Walking: right hip flexed, knee bent" },
-    { src: "/images/symbiosuits/rendu-face.jpg", fr: "Vue de face", en: "Front view" },
-    { src: "/images/symbiosuits/rendu-dos.jpg", fr: "Vue arrière : unité de contrôle et batterie", en: "Back view: control unit and battery" },
-    { src: "/images/symbiosuits/rendu-genou.jpg", fr: "Gros plan sur les articulations de genou", en: "Close-up of the knee joints" },
+    { src: "/images/symbiosuits/rendu-iso.jpg", fr: "Vue d'ensemble", en: "Overview" },
+    { src: "/images/symbiosuits/rendu-dos.jpg", fr: "Vue arrière : pack dorsal et vérins de cheville", en: "Back view: back pack and ankle actuators" },
+    { src: "/images/symbiosuits/rendu-eclate.jpg", fr: "Vue éclatée des sous-ensembles", en: "Exploded view of the sub-assemblies" },
+  ];
+  const details = [
+    { src: "/images/symbiosuits/rendu-hanche.jpg", fr: "Moteur de hanche sur son support ajouré", en: "Hip motor on its lightened bracket" },
+    { src: "/images/symbiosuits/rendu-genou.jpg", fr: "Genou : moteur, genouillère blindée, bras en treillis", en: "Knee: motor, armored cap, truss strut" },
+    { src: "/images/symbiosuits/rendu-mollet.jpg", fr: "Vérins de cheville à soufflet, derrière les mollets", en: "Bellows ankle actuators behind the calves" },
+    { src: "/images/symbiosuits/rendu-pack.jpg", fr: "Pack dorsal : batterie, unité de contrôle, câblage", en: "Back pack: battery, control unit, cabling" },
+    { src: "/images/symbiosuits/rendu-botte.jpg", fr: "Bottes renforcées et articulations de cheville", en: "Reinforced boots and ankle joints" },
   ];
 
   const specs = [
@@ -40,10 +48,10 @@ export default function SymbiosuitsDesign() {
   ];
 
   const model = [
-    { v: "10", l: fr ? "pièces modélisées, toutes en volumes fermés" : "modelled parts, all closed solids" },
-    { v: "1003 mm", l: fr ? "de hauteur, de la semelle au boîtier" : "tall, from sole to housing" },
-    { v: "430 × 384", l: fr ? "mm d'encombrement au sol" : "mm footprint" },
-    { v: "3", l: fr ? "articulations par jambe : hanche, genou, cheville" : "joints per leg: hip, knee, ankle" },
+    { v: "200+", l: fr ? "pièces modélisées, toutes en volumes fermés" : "modelled parts, all closed solids" },
+    { v: "1159 mm", l: fr ? "de hauteur, de la semelle à la poignée du pack" : "tall, from sole to pack handle" },
+    { v: "534 × 423", l: fr ? "mm d'encombrement au sol" : "mm footprint" },
+    { v: "3", l: fr ? "actionneurs par jambe : hanche, genou, cheville" : "actuators per leg: hip, knee, ankle" },
   ];
 
   return (
@@ -52,8 +60,8 @@ export default function SymbiosuitsDesign() {
         title={fr ? "Le concept en 3D" : "The concept in 3D"}
         intro={
           fr
-            ? "Reprise du projet en 2026 : à partir d'un schéma de principe, j'ai modélisé un exosquelette des membres inférieurs complet. Chaque pièce est paramétrée (axes articulaires, longueurs de segments, diamètres des manchettes) et exportée en STL."
-            : "Picking the project back up in 2026: from a principle sketch, I modelled a complete lower-limb exoskeleton. Every part is parametric (joint axes, segment lengths, cuff diameters) and exported as STL."
+            ? "Reprise du projet en 2026 : à partir d'un schéma de principe, j'ai modélisé un exosquelette des membres inférieurs complet et détaillé. Les blindages épousent la morphologie du porteur, les bras en treillis portent trois actionneurs par jambe, et chaque pièce (visserie, sangles, câblage compris) est paramétrée puis exportée en STL."
+            : "Picking the project back up in 2026: from a principle sketch, I modelled a complete, detailed lower-limb exoskeleton. The armor follows the wearer's body, truss struts carry three actuators per leg, and every part (fasteners, straps and cabling included) is parametric and exported as STL."
         }
       >
         <div className="grid gap-4 lg:grid-cols-[1.3fr_1fr]">
@@ -63,6 +71,11 @@ export default function SymbiosuitsDesign() {
               <Figure key={r.src} img={r} lang={lang} />
             ))}
           </div>
+        </div>
+        <div className="mt-4 grid gap-4 grid-cols-2 lg:grid-cols-5">
+          {details.map((r) => (
+            <Figure key={r.src} img={r} lang={lang} cover />
+          ))}
         </div>
         <div className="mt-6 grid gap-4 grid-cols-2 lg:grid-cols-4">
           {model.map((m, i) => (
@@ -116,8 +129,8 @@ export default function SymbiosuitsDesign() {
         title={fr ? "Fichiers STL" : "STL files"}
         intro={
           fr
-            ? "Le modèle est téléchargeable : l'assemblage complet et chaque pièce séparément (côté droit, la jambe gauche est symétrique). Unités en millimètres."
-            : "The model can be downloaded: the full assembly and each part on its own (right side, the left leg is mirrored). Units in millimetres."
+            ? "Le modèle est téléchargeable : l'assemblage complet et chaque sous-ensemble séparément (côté droit, la jambe gauche est symétrique). Unités en millimètres."
+            : "The model can be downloaded: the full assembly and each sub-assembly on its own (right side, the left leg is mirrored). Units in millimetres."
         }
       >
         <div className="grid gap-3 sm:grid-cols-2">
@@ -147,7 +160,7 @@ export default function SymbiosuitsDesign() {
   );
 }
 
-function Figure({ img, lang, tall }: { img: { src: string; fr: string; en: string }; lang: "fr" | "en"; tall?: boolean }) {
+function Figure({ img, lang, tall, cover }: { img: { src: string; fr: string; en: string }; lang: "fr" | "en"; tall?: boolean; cover?: boolean }) {
   return (
     <motion.figure
       initial={{ opacity: 0, y: 12 }}
@@ -156,8 +169,8 @@ function Figure({ img, lang, tall }: { img: { src: string; fr: string; en: strin
       transition={{ duration: 0.4 }}
       className="brick overflow-hidden flex flex-col"
     >
-      <div className={`relative bg-[#eef1f5] ${tall ? "aspect-[4/5]" : "aspect-[4/3] lg:aspect-auto lg:flex-1"}`}>
-        <img src={img.src} alt={img[lang]} loading="lazy" className="absolute inset-0 w-full h-full object-contain" />
+      <div className={`relative bg-gradient-to-b from-[#d5d8dc] to-[#9fa4aa] ${tall ? "aspect-[4/5]" : cover ? "aspect-square" : "aspect-[4/3] lg:aspect-auto lg:flex-1"}`}>
+        <img src={img.src} alt={img[lang]} loading="lazy" className={`absolute inset-0 w-full h-full ${cover ? "object-cover" : "object-contain"}`} />
       </div>
       <figcaption className="p-3 text-xs text-chrome-400">{img[lang]}</figcaption>
     </motion.figure>

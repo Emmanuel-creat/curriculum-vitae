@@ -312,7 +312,7 @@ export const projectContent: Record<Slug, Record<"fr" | "en", ProjectContent>> =
         "Les exosquelettes existants sont soit médicaux et hors de prix, soit industriels et rigides. Il manque une génération intermédiaire : robuste, modulaire, adressable au sport de haut niveau, à l'assistance physique du travailleur, et à l'usage militaire, trois marchés qui partagent les mêmes contraintes de fiabilité, de poids et d'endurance.",
       contribution: [
         "Fabrication de pièces prototypes par impression 3D et usinage.",
-        "Reprise en 2026 : modélisation 3D paramétrique d'un exosquelette des membres inférieurs complet (ceinture, hanches, genoux, chevilles, semelles), 10 pièces exportées en STL.",
+        "Reprise en 2026 : modélisation 3D paramétrique détaillée d'un exosquelette des membres inférieurs complet : blindages ajustés au porteur, bras en treillis, moteurs de hanche et de genou, vérins de cheville, pack dorsal, câblage, exportés en STL.",
         "Mises en plan cotées (face, profil, dos, dessus) et détail de l'articulation du genou.",
         "Architecture d'assistance : capteurs d'angle et d'effort, actionneurs de hanche et de cheville, unité de contrôle et batterie à la ceinture.",
         "Création complète du site web du projet.",
@@ -320,7 +320,7 @@ export const projectContent: Record<Slug, Record<"fr" | "en", ProjectContent>> =
       ],
       results: [
         "Premières pièces prototypes fonctionnelles.",
-        "Concept CAO complet : 10 pièces, assemblage de 1003 mm, plans cotés et fichiers STL téléchargeables.",
+        "Concept CAO détaillé : plus de 200 pièces, 11 sous-ensembles, rendus, vue éclatée, plans cotés et fichiers STL téléchargeables.",
         "Vitrine web du projet en ligne.",
         "Le projet est en pause volontaire, il reprendra plus tard, avec l'expérience accumulée depuis.",
       ],
@@ -339,7 +339,7 @@ export const projectContent: Record<Slug, Record<"fr" | "en", ProjectContent>> =
         "Existing exoskeletons are either medical and prohibitively expensive, or industrial and rigid. A middle generation is missing: robust, modular, addressable to elite sport, physical assist for workers, and military use, three markets that share the same reliability, weight and endurance constraints.",
       contribution: [
         "Prototype parts manufactured via 3D printing and machining.",
-        "Back on it in 2026: parametric 3D model of a complete lower-limb exoskeleton (belt, hips, knees, ankles, soles), 10 parts exported as STL.",
+        "Back on it in 2026: detailed parametric 3D model of a complete lower-limb exoskeleton: armor fitted to the wearer, truss struts, hip and knee motors, ankle actuators, back pack and cabling, exported as STL.",
         "Dimensioned drawings (front, side, back, top) and a knee joint detail.",
         "Assistance architecture: angle and force sensors, hip and ankle actuators, control unit and battery on the belt.",
         "Full project website built from scratch.",
@@ -347,7 +347,7 @@ export const projectContent: Record<Slug, Record<"fr" | "en", ProjectContent>> =
       ],
       results: [
         "First functional prototype parts.",
-        "Complete CAD concept: 10 parts, 1003 mm assembly, dimensioned drawings and downloadable STL files.",
+        "Detailed CAD concept: over 200 parts, 11 sub-assemblies, renders, exploded view, dimensioned drawings and downloadable STL files.",
         "Project website online.",
         "Project intentionally paused, will resume later, with everything learned since.",
       ],
