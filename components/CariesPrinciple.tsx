@@ -10,7 +10,7 @@ export default function CariesPrinciple({ accent }: { accent: string }) {
     m2: fr ? "Milieu 2 : cuve cariogène" : "Medium 2: cariogenic chamber",
     m2s: fr ? "accès libre 3 fois par jour" : "open access 3 times a day",
     disc: fr ? "Disque consommable" : "Consumable disc",
-    discs: fr ? "semi-rigide + enveloppe latex" : "semi-rigid + latex envelope",
+    discs: fr ? "silicone ou polystyrène + latex" : "silicone or polystyrene + latex",
     m1: fr ? "Milieu 1 : cuve racinaire" : "Medium 1: root chamber",
     m1s: fr ? "2 fois par semaine, échange gazeux" : "twice a week, gas exchange",
     crown: fr ? "Couronne et lésion" : "Crown and lesion",

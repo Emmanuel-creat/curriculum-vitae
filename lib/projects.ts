@@ -57,17 +57,17 @@ export const projectContent: Record<Slug, Record<"fr" | "en", ProjectContent>> =
       contribution: [
         "Analyse du besoin du laboratoire et traduction en cahier des charges fonctionnel : isolement des milieux, fréquences d'accès, échange gazeux, matériaux autorisés.",
         "Croquis de recherche, puis choix d'une architecture en trois pièces : cuve basse, disque consommable, couvercle à cheminée.",
-        "Conception du disque consommable : cœur semi-rigide sous enveloppe latex, pré-percé pour le passage des racines, changé à chaque dent. Il porte l'échantillon et sert de joint unique entre les deux milieux.",
+        "Conception du disque consommable : cœur semi-rigide en silicone ou en polystyrène sous une enveloppe extérieure en latex, pré-percé pour le passage des racines, changé à chaque dent. Il porte l'échantillon et sert de joint unique entre les deux milieux.",
         "Couvercle à cheminée clipsé sur la cuve : accès direct à la cuve cariogène sans démonter l'ensemble ni perturber le milieu racinaire.",
         "Dimensionnement de la cheminée selon la force exercée par le fluide sur le disque.",
         "Port d'injection / éjection pour renouveler le milieu racinaire.",
         "Modélisation 3D, vues éclatées, vues en coupe et mises en plan sous SolidWorks.",
-        "Répartition des matériaux du cahier des charges entre les pièces : PETG, polystyrène, silicone et latex.",
+        "Choix des matériaux par pièce : cuves en PETG, disque consommable avec un cœur en silicone ou en polystyrène et une enveloppe extérieure en latex.",
       ],
       results: [
         "Architecture complète en CAO : deux chambres séparées par un seul joint consommable.",
         "Assemblage par clipsage, sans vis ni colle : montage et démontage rapides entre deux manipulations.",
-        "Séparation claire entre pièces réutilisables (cuve, couvercle) et pièce consommable (disque).",
+        "Séparation claire entre pièces réutilisables en PETG (cuve, couvercle) et pièce consommable (disque).",
         "Accès différencié : cuve cariogène par la cheminée, cuve racinaire par le port d'injection / éjection.",
       ],
       stack: [
@@ -97,17 +97,17 @@ export const projectContent: Record<Slug, Record<"fr" | "en", ProjectContent>> =
       contribution: [
         "Analysed the lab's needs and turned them into functional specifications: media isolation, access frequency, gas exchange, allowed materials.",
         "Research sketches, then a three-part architecture: lower vessel, consumable disc, chimney lid.",
-        "Designed the consumable disc: semi-rigid core in a latex envelope, pre-drilled for the roots, replaced for every tooth. It carries the sample and is the only seal between both media.",
+        "Designed the consumable disc: semi-rigid silicone or polystyrene core in an outer latex envelope, pre-drilled for the roots, replaced for every tooth. It carries the sample and is the only seal between both media.",
         "Chimney lid snapped onto the vessel: direct access to the cariogenic chamber without taking the unit apart or disturbing the root medium.",
         "Sized the chimney according to the force the fluid applies on the disc.",
         "Injection / ejection port to renew the root medium.",
         "3D modelling, exploded views, cross-sections and drawings in SolidWorks.",
-        "Assigned the specified materials to each part: PETG, polystyrene, silicone and latex.",
+        "Material choice per part: PETG vessels, consumable disc with a silicone or polystyrene core and an outer latex envelope.",
       ],
       results: [
         "Complete CAD architecture: two chambers separated by a single consumable seal.",
         "Snap-fit assembly, no screws or glue: quick to open and close between handlings.",
-        "Clear split between reusable parts (vessel, lid) and the consumable part (disc).",
+        "Clear split between reusable PETG parts (vessel, lid) and the consumable part (disc).",
         "Separate access: cariogenic chamber through the chimney, root chamber through the injection / ejection port.",
       ],
       stack: [

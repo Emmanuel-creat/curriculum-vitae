@@ -35,7 +35,7 @@ export const cadSheets: CadSheet[] = [
     crop: [20, 50, 360, 370],
     title: { fr: "Ensemble monté", en: "Assembled unit" },
     view: { fr: "Vue isométrique", en: "Isometric view" },
-    material: { fr: "PETG · Polystyrène · Silicone / latex", en: "PETG · Polystyrene · Silicone / latex" },
+    material: { fr: "Cuves PETG · Disque silicone ou polystyrène / latex", en: "PETG vessels · Silicone or polystyrene / latex disc" },
     caption: {
       fr: "Le dispositif fermé : le couvercle se clipse sur la cuve et vient pincer le disque consommable, seul joint entre les deux milieux. La cheminée laisse voir le disque et donne un accès direct à la cuve cariogène.",
       en: "The closed device: the lid snaps onto the vessel and clamps the consumable disc, the only seal between both media. The chimney shows the disc and gives direct access to the cariogenic chamber.",
@@ -55,7 +55,7 @@ export const cadSheets: CadSheet[] = [
     crop: [40, 20, 440, 740],
     title: { fr: "Vue éclatée", en: "Exploded view" },
     view: { fr: "Isométrique, 3 pièces", en: "Isometric, 3 parts" },
-    material: { fr: "PETG · Silicone / latex · Polystyrène", en: "PETG · Silicone / latex · Polystyrene" },
+    material: { fr: "Cuves PETG · Disque silicone ou polystyrène / latex", en: "PETG vessels · Silicone or polystyrene / latex disc" },
     caption: {
       fr: "Trois pièces seulement. Le couvercle et la cuve sont réutilisables, le disque est changé à chaque dent : c'est lui qui porte l'échantillon et assure l'étanchéité.",
       en: "Only three parts. Lid and vessel are reusable, the disc is replaced for every tooth: it carries the sample and provides the seal.",
@@ -64,7 +64,7 @@ export const cadSheets: CadSheet[] = [
       { x: 255, y: 92, bx: 420, by: 60, label: { fr: "Cheminée", en: "Chimney" } },
       { x: 140, y: 205, bx: 70, by: 140, label: { fr: "Couvercle à jupe de clipsage", en: "Lid with snap skirt" } },
       { x: 250, y: 345, bx: 420, by: 300, label: { fr: "Pré-perçages pour le passage des racines", en: "Pre-drilled holes for the roots" } },
-      { x: 160, y: 390, bx: 70, by: 420, label: { fr: "Disque consommable semi-rigide, enveloppe latex", en: "Semi-rigid consumable disc, latex envelope" } },
+      { x: 160, y: 390, bx: 70, by: 420, label: { fr: "Disque consommable : cœur silicone ou polystyrène, enveloppe latex", en: "Consumable disc: silicone or polystyrene core, latex envelope" } },
       { x: 250, y: 525, bx: 420, by: 500, label: { fr: "Logement du disque", en: "Disc seat" } },
       { x: 190, y: 660, bx: 70, by: 700, label: { fr: "Cuve du milieu 1 (racines)", en: "Medium 1 vessel (roots)" } },
     ],
@@ -77,7 +77,7 @@ export const cadSheets: CadSheet[] = [
     crop: [30, 30, 760, 700],
     title: { fr: "Coupe de l'ensemble", en: "Assembly cross-section" },
     view: { fr: "Coupe longitudinale", en: "Longitudinal section" },
-    material: { fr: "PETG · Silicone / latex · Polystyrène", en: "PETG · Silicone / latex · Polystyrene" },
+    material: { fr: "Cuves PETG · Disque silicone ou polystyrène / latex", en: "PETG vessels · Silicone or polystyrene / latex disc" },
     caption: {
       fr: "La coupe montre l'isolement des deux milieux : au-dessus, le volume de la cheminée (milieu 2, côté couronne) ; au-dessous, la chambre racinaire (milieu 1). Le disque, pincé entre couvercle et cuve, est la seule interface entre les deux.",
       en: "The section shows how both media are isolated: above, the chimney volume (medium 2, crown side); below, the root chamber (medium 1). The disc, clamped between lid and vessel, is the only interface between them.",
@@ -99,7 +99,7 @@ export const cadSheets: CadSheet[] = [
     crop: [60, 60, 600, 520],
     title: { fr: "Cuve basse", en: "Lower vessel" },
     view: { fr: "Coupe longitudinale", en: "Longitudinal section" },
-    material: { fr: "Polystyrène transparent", en: "Transparent polystyrene" },
+    material: { fr: "PETG", en: "PETG" },
     caption: {
       fr: "La cuve sépare un logement supérieur, qui reçoit le disque, et la chambre du milieu 1. Une ouverture centrale épaulée laisse descendre les racines dans le milieu.",
       en: "The vessel separates an upper seat, which receives the disc, from the medium 1 chamber. A stepped central opening lets the roots go down into the medium.",
@@ -141,10 +141,10 @@ export const cadSheets: CadSheet[] = [
     crop: [80, 60, 760, 560],
     title: { fr: "Disque consommable", en: "Consumable disc" },
     view: { fr: "Vue isométrique", en: "Isometric view" },
-    material: { fr: "Silicone semi-rigide sous enveloppe latex", en: "Semi-rigid silicone in a latex envelope" },
+    material: { fr: "Cœur silicone ou polystyrène, enveloppe extérieure latex", en: "Silicone or polystyrene core, outer latex envelope" },
     caption: {
-      fr: "Pièce clé du dispositif : un cœur semi-rigide qui tient la dent, sous une enveloppe latex qui épouse les parois et fait joint. Les pré-perçages guident les racines vers le milieu 1.",
-      en: "Key part of the device: a semi-rigid core that holds the tooth, inside a latex envelope that conforms to the walls and seals. The pre-drilled holes guide the roots into medium 1.",
+      fr: "Pièce clé du dispositif : un cœur semi-rigide en silicone ou en polystyrène qui tient la dent, sous une enveloppe extérieure en latex qui épouse les parois et fait joint. Les pré-perçages guident les racines vers le milieu 1.",
+      en: "Key part of the device: a semi-rigid silicone or polystyrene core that holds the tooth, inside an outer latex envelope that conforms to the walls and seals. The pre-drilled holes guide the roots into medium 1.",
     },
     callouts: [
       { x: 457, y: 255, bx: 640, by: 140, label: { fr: "Pré-perçages pour les racines", en: "Pre-drilled holes for the roots" } },
