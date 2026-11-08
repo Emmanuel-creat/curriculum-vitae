@@ -22,16 +22,18 @@ export type ProjectContent = {
 };
 
 export const projectOrder: ProjectMeta[] = [
-  { slug: "mobilis", tag: "R&D", accent: "#4ade80", order: 1 },
-  { slug: "biomemory", tag: "R&D", accent: "#22d3ee", order: 2 },
-  { slug: "vic2d", tag: "R&D", accent: "#f472b6", order: 3 },
-  { slug: "symbiosuits", tag: "R&D", accent: "#fb923c", order: 4 },
-  { slug: "calendrier-bti", tag: "Code", accent: "#818cf8", order: 5 },
-  { slug: "arcade-online", tag: "Code", accent: "#facc15", order: 6 },
-  { slug: "safe-screen", tag: "Code", accent: "#c084fc", order: 7 },
+  { slug: "lesions-carieuses", tag: "R&D", accent: "#f87171", order: 1 },
+  { slug: "mobilis", tag: "R&D", accent: "#4ade80", order: 2 },
+  { slug: "biomemory", tag: "R&D", accent: "#22d3ee", order: 3 },
+  { slug: "vic2d", tag: "R&D", accent: "#f472b6", order: 4 },
+  { slug: "symbiosuits", tag: "R&D", accent: "#fb923c", order: 5 },
+  { slug: "calendrier-bti", tag: "Code", accent: "#818cf8", order: 6 },
+  { slug: "arcade-online", tag: "Code", accent: "#facc15", order: 7 },
+  { slug: "safe-screen", tag: "Code", accent: "#c084fc", order: 8 },
 ];
 
 type Slug =
+  | "lesions-carieuses"
   | "mobilis"
   | "biomemory"
   | "vic2d"
@@ -41,6 +43,88 @@ type Slug =
   | "safe-screen";
 
 export const projectContent: Record<Slug, Record<"fr" | "en", ProjectContent>> = {
+  "lesions-carieuses": {
+    fr: {
+      title: "Cultures de lésions carieuses",
+      subtitle: "Dispositif de culture bi-chambre sur dent entière · Projet R&D M2",
+      period: "Sept. 2026 → Janv. 2027",
+      role: "Conception et développement de bout en bout · Projet M2 BTI pour un laboratoire d'odontologie",
+      status: "En cours · Conception CAO",
+      pitch:
+        "Recréer une carie au laboratoire, sur une vraie dent : deux milieux de culture, un seul organe, et une étanchéité parfaite entre les deux.",
+      problem:
+        "Un laboratoire d'odontologie doit tester des traitements sur des lésions carieuses. Pour obtenir des lésions reproductibles, il faut les recréer artificiellement : mettre en culture la dent et la carie en même temps, dans des conditions maîtrisées. Le cahier des charges impose des matériaux biocompatibles et inertes (silicone, PETG, polystyrène, latex) et deux cuves parfaitement isolées l'une de l'autre autour d'une même dent. La cuve cariogène, côté couronne, doit rester accessible trois fois par jour pour la manipulation. La seconde cuve, côté racines, n'est ouverte que deux fois par semaine mais doit rester en échange gazeux avec l'extérieur.",
+      contribution: [
+        "Analyse du besoin du laboratoire et traduction en cahier des charges fonctionnel : isolement des milieux, fréquences d'accès, échange gazeux, matériaux autorisés.",
+        "Croquis de recherche, puis choix d'une architecture en trois pièces : cuve basse, disque consommable, couvercle à cheminée.",
+        "Conception du disque consommable : cœur semi-rigide en silicone ou en polystyrène sous une enveloppe extérieure en latex, pré-percé pour le passage des racines, changé à chaque dent. Il porte l'échantillon et sert de joint unique entre les deux milieux.",
+        "Couvercle à cheminée clipsé sur la cuve : accès direct à la cuve cariogène sans démonter l'ensemble ni perturber le milieu racinaire.",
+        "Dimensionnement de la cheminée selon la force exercée par le fluide sur le disque.",
+        "Port d'injection / éjection pour renouveler le milieu racinaire.",
+        "Modélisation 3D, vues éclatées, vues en coupe et mises en plan sous SolidWorks.",
+        "Choix des matériaux par pièce : cuves en PETG, disque consommable avec un cœur en silicone ou en polystyrène et une enveloppe extérieure en latex.",
+      ],
+      results: [
+        "Architecture complète en CAO : deux chambres séparées par un seul joint consommable.",
+        "Assemblage par clipsage, sans vis ni colle : montage et démontage rapides entre deux manipulations.",
+        "Séparation claire entre pièces réutilisables en PETG (cuve, couvercle) et pièce consommable (disque).",
+        "Accès différencié : cuve cariogène par la cheminée, cuve racinaire par le port d'injection / éjection.",
+      ],
+      stack: [
+        "SolidWorks",
+        "Mise en plan",
+        "Conception de dispositif de culture",
+        "Étanchéité",
+        "Assemblage par clipsage",
+        "Matériaux biocompatibles",
+        "PETG",
+        "Polystyrène",
+        "Silicone",
+        "Latex",
+      ],
+      links: [],
+    },
+    en: {
+      title: "Carious lesion cultures",
+      subtitle: "Dual-chamber culture device on a whole tooth · M2 R&D project",
+      period: "Sept 2026 → Jan 2027",
+      role: "End-to-end design and development · M2 BTI project for a dental research lab",
+      status: "Ongoing · CAD design",
+      pitch:
+        "Recreating a cavity in the lab, on a real tooth: two culture media, one organ, and a perfect seal between them.",
+      problem:
+        "A dental research lab needs to test treatments on carious lesions. To get reproducible lesions, they must be recreated artificially: culturing the tooth and the cavity at the same time, under controlled conditions. The specifications require biocompatible, inert materials (silicone, PETG, polystyrene, latex) and two chambers fully isolated from each other around the same tooth. The cariogenic chamber, on the crown side, must be accessible three times a day for handling. The second chamber, on the root side, is opened only twice a week but must keep gas exchange with the outside.",
+      contribution: [
+        "Analysed the lab's needs and turned them into functional specifications: media isolation, access frequency, gas exchange, allowed materials.",
+        "Research sketches, then a three-part architecture: lower vessel, consumable disc, chimney lid.",
+        "Designed the consumable disc: semi-rigid silicone or polystyrene core in an outer latex envelope, pre-drilled for the roots, replaced for every tooth. It carries the sample and is the only seal between both media.",
+        "Chimney lid snapped onto the vessel: direct access to the cariogenic chamber without taking the unit apart or disturbing the root medium.",
+        "Sized the chimney according to the force the fluid applies on the disc.",
+        "Injection / ejection port to renew the root medium.",
+        "3D modelling, exploded views, cross-sections and drawings in SolidWorks.",
+        "Material choice per part: PETG vessels, consumable disc with a silicone or polystyrene core and an outer latex envelope.",
+      ],
+      results: [
+        "Complete CAD architecture: two chambers separated by a single consumable seal.",
+        "Snap-fit assembly, no screws or glue: quick to open and close between handlings.",
+        "Clear split between reusable PETG parts (vessel, lid) and the consumable part (disc).",
+        "Separate access: cariogenic chamber through the chimney, root chamber through the injection / ejection port.",
+      ],
+      stack: [
+        "SolidWorks",
+        "Technical drawings",
+        "Culture device design",
+        "Sealing",
+        "Snap-fit assembly",
+        "Biocompatible materials",
+        "PETG",
+        "Polystyrene",
+        "Silicone",
+        "Latex",
+      ],
+      links: [],
+    },
+  },
   mobilis: {
     fr: {
       title: "Mobilis",

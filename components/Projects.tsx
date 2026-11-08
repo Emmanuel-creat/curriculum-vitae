@@ -7,6 +7,7 @@ import SectionHeader from "./SectionHeader";
 import { projectOrder } from "@/lib/projects";
 
 const CARD_KEYS = [
+  { key: "caries", slug: "lesions-carieuses" },
   { key: "mobilis", slug: "mobilis" },
   { key: "biomemory", slug: "biomemory" },
   { key: "vic2d", slug: "vic2d" },
@@ -62,7 +63,7 @@ export default function Projects() {
                       {isRnd ? t("projects.tagRnd") : t("projects.tagCode")}
                     </span>
                     <span className="text-xs font-mono text-chrome-500">
-                      {String(i + 1).padStart(2, "0")} / 07
+                      {String(i + 1).padStart(2, "0")} / {String(CARD_KEYS.length).padStart(2, "0")}
                     </span>
                   </div>
 

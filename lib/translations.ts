@@ -58,6 +58,7 @@ export type Dict = {
     tagRnd: string;
     tagCode: string;
     cards: Record<
+      | "caries"
       | "mobilis"
       | "biomemory"
       | "vic2d"
@@ -230,6 +231,13 @@ export const translations: Record<Lang, Dict> = {
       title: "Les étapes qui ont construit mon parcours.",
       items: [
         {
+          when: "Sept. 2026 → Janv. 2027",
+          role: "R&D · Cultures de lésions carieuses",
+          org: "Projet M2 BTI · Laboratoire d'odontologie",
+          desc: "Conception complète d'un dispositif de culture bi-chambre sur dent entière : deux milieux isolés, disque consommable étanche, couvercle à cheminée, mises en plan CAO.",
+          href: "/projects/lesions-carieuses",
+        },
+        {
           when: "Avr. → Août 2026",
           role: "Stagiaire R&D",
           org: "MGA Medtech · BioMemory",
@@ -275,12 +283,19 @@ export const translations: Record<Lang, Dict> = {
       kicker: "Projets",
       title: "Des projets de la conception à la réalisation.",
       subtitle:
-        "Sept projets illustrant mon approche de la recherche, du développement et de la création, à travers deux domaines complémentaires : la R&D biomédicale et le développement logiciel.",
+        "Huit projets illustrant mon approche de la recherche, du développement et de la création, à travers deux domaines complémentaires : la R&D biomédicale et le développement logiciel.",
       viewAll: "Voir tous les projets",
       viewProject: "Découvrir",
       tagRnd: "R&D",
       tagCode: "Code",
       cards: {
+        caries: {
+          tag: "R&D",
+          title: "Lésions carieuses",
+          subtitle: "Projet R&D M2 · 2026 → 2027",
+          summary:
+            "Dispositif de culture bi-chambre qui recrée une carie sur une vraie dent, avec deux milieux parfaitement isolés.",
+        },
         mobilis: {
           tag: "R&D",
           title: "Mobilis",
@@ -491,6 +506,13 @@ export const translations: Record<Lang, Dict> = {
       title: "The steps that built my path.",
       items: [
         {
+          when: "Sept 2026 → Jan 2027",
+          role: "R&D · Carious lesion cultures",
+          org: "M2 BTI project · Dental research lab",
+          desc: "End-to-end design of a dual-chamber culture device on a whole tooth: two isolated media, sealed consumable disc, chimney lid, CAD drawings.",
+          href: "/projects/lesions-carieuses",
+        },
+        {
           when: "Apr → Aug 2026",
           role: "R&D Intern",
           org: "MGA Medtech · BioMemory",
@@ -536,12 +558,19 @@ export const translations: Record<Lang, Dict> = {
       kicker: "Projects",
       title: "Projects from concept to execution.",
       subtitle:
-        "Seven projects showcasing my approach to research, development and creation, across two complementary domains: biomedical R&D and software development.",
+        "Eight projects showcasing my approach to research, development and creation, across two complementary domains: biomedical R&D and software development.",
       viewAll: "See all projects",
       viewProject: "Explore",
       tagRnd: "R&D",
       tagCode: "Code",
       cards: {
+        caries: {
+          tag: "R&D",
+          title: "Carious lesions",
+          subtitle: "M2 R&D project · 2026 → 2027",
+          summary:
+            "A dual-chamber culture device that recreates a cavity on a real tooth, with two fully isolated media.",
+        },
         mobilis: {
           tag: "R&D",
           title: "Mobilis",
