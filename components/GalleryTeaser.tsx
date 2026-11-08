@@ -3,9 +3,12 @@
 import Link from "next/link";
 import { useI18n } from "@/lib/i18n";
 import SectionHeader from "./SectionHeader";
+import { galleryImages } from "@/lib/gallery";
+
+const TEASER = Object.values(galleryImages).flat().slice(0, 8);
 
 export default function GalleryTeaser() {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
 
   return (
     <section id="gallery" className="relative py-32 border-t border-white/5">
@@ -17,7 +20,31 @@ export default function GalleryTeaser() {
         />
 
         <div className="grid gap-4 grid-cols-2 md:grid-cols-4">
-          {Array.from({ length: 8 }).map((_, i) => (
+          {Array.from({ length: 8 }).map((_, i) => {
+            const img = TEASER[i];
+            if (img) {
+              return (
+                <Link
+                  key={img.src}
+                  href="/gallery"
+                  className="brick brick-hover aspect-square relative overflow-hidden group"
+                  aria-label={img.alt[lang]}
+                >
+                  <img
+                    src={img.src}
+                    alt={img.alt[lang]}
+                    loading="lazy"
+                    className={`absolute inset-0 w-full h-full transition duration-500 group-hover:scale-[1.04] ${
+                      img.kind === "cad" ? "object-contain bg-[#eef1f5] p-3" : "object-cover"
+                    }`}
+                  />
+                  <div className="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-ink-950/90 to-transparent opacity-0 group-hover:opacity-100 transition">
+                    <div className="text-xs text-chrome-100 leading-snug">{img.alt[lang]}</div>
+                  </div>
+                </Link>
+              );
+            }
+            return (
             <div
               key={i}
               className="brick aspect-square relative overflow-hidden group"
@@ -30,7 +57,8 @@ export default function GalleryTeaser() {
                 {t("gallery.empty")}
               </div>
             </div>
-          ))}
+            );
+          })}
         </div>
 
         <div className="mt-10 text-center">

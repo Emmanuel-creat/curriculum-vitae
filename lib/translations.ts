@@ -350,7 +350,7 @@ export const translations: Record<Lang, Dict> = {
       kicker: "Galerie",
       title: "Rendus CAO & prototypes.",
       subtitle:
-        "Une sélection de pièces conçues, imprimées, usinées, , rangées par projet.",
+        "Une sélection de pièces conçues, imprimées, usinées, rangées par projet.",
       viewAll: "Voir la galerie complète",
       empty: "Visuels bientôt en ligne, je les ajoute au fur et à mesure.",
     },
@@ -625,7 +625,7 @@ export const translations: Record<Lang, Dict> = {
       kicker: "Gallery",
       title: "CAD renders & prototypes.",
       subtitle:
-        "A selection of parts I designed, printed, machined, , grouped by project.",
+        "A selection of parts I designed, printed, machined, grouped by project.",
       viewAll: "See the full gallery",
       empty: "Visuals coming soon, I add them as they come.",
     },

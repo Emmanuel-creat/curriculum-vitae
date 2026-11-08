@@ -19,7 +19,7 @@ app/
 ├── page.tsx             # Home
 ├── globals.css          # Tailwind + tokens design
 ├── icon.svg             # Favicon
-├── gallery/page.tsx     # Galerie 3D/CAO
+├── gallery/page.tsx     # Galerie 3D/CAO (images dans lib/gallery.ts, agrandissement au clic)
 └── projects/
     ├── lesions-carieuses/
     ├── mobilis/

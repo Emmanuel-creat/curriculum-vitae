@@ -5,8 +5,10 @@ import { motion } from "framer-motion";
 import { useI18n } from "@/lib/i18n";
 import { projectOrder } from "@/lib/projects";
 import SectionHeader from "@/components/SectionHeader";
+import ImageGrid from "@/components/ImageGrid";
+import { galleryImages } from "@/lib/gallery";
 
-const R_AND_D = ["mobilis", "biomemory", "vic2d", "symbiosuits"] as const;
+const R_AND_D = ["lesions-carieuses", "mobilis", "biomemory", "vic2d", "symbiosuits"] as const;
 
 export default function GalleryPage() {
   const { t, dict } = useI18n();
@@ -24,7 +26,9 @@ export default function GalleryPage() {
           {R_AND_D.map((slug) => {
             const meta = projectOrder.find((p) => p.slug === slug)!;
             const cardKey =
-              slug === "mobilis"
+              slug === "lesions-carieuses"
+                ? "caries"
+                : slug === "mobilis"
                 ? "mobilis"
                 : slug === "biomemory"
                   ? "biomemory"
@@ -50,10 +54,13 @@ export default function GalleryPage() {
                     href={`/projects/${slug}`}
                     className="text-sm text-chrome-300 hover:text-chrome-50 transition inline-flex items-center gap-2"
                   >
-                    Voir le projet →
+                    {t("projects.viewProject")} →
                   </Link>
                 </div>
 
+                {galleryImages[slug] ? (
+                  <ImageGrid images={galleryImages[slug]} accent={meta.accent} />
+                ) : (
                 <div className="grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                   {Array.from({ length: 6 }).map((_, i) => (
                     <motion.div
@@ -84,6 +91,7 @@ export default function GalleryPage() {
                     </motion.div>
                   ))}
                 </div>
+                )}
               </section>
             );
           })}
