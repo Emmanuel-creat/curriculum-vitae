@@ -35,7 +35,7 @@ export default function GalleryTeaser() {
                     alt={img.alt[lang]}
                     loading="lazy"
                     className={`absolute inset-0 w-full h-full transition duration-500 group-hover:scale-[1.04] ${
-                      img.kind === "cad" ? "object-contain bg-[#eef1f5] p-3" : "object-cover"
+                      img.kind === "cad" ? "object-contain bg-[#eef1f5] p-3" : img.kind === "render" ? "object-contain bg-[#07080c]" : "object-cover"
                     }`}
                   />
                   <div className="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-ink-950/90 to-transparent opacity-0 group-hover:opacity-100 transition">

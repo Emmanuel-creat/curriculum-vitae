@@ -1,6 +1,6 @@
 import type { L10n } from "./cad";
 
-export type GalleryImage = { src: string; alt: L10n; kind: "cad" | "photo"; credit?: string };
+export type GalleryImage = { src: string; alt: L10n; kind: "cad" | "photo" | "render"; credit?: string };
 
 const c = (src: string, fr: string, en: string): GalleryImage => ({
   src: `/images/caries/${src}.jpg`,
@@ -79,6 +79,25 @@ export const mobilisImages: GalleryImage[] = [
   mo("planning", "Planning du projet", "Project schedule"),
 ];
 
+const vi = (src: string, fr: string, en: string): GalleryImage => ({
+  src: `/images/vic2d/${src}.jpg`,
+  alt: { fr, en },
+  kind: "render",
+});
+
+export const vic2dImages: GalleryImage[] = [
+  vi("chaine", "La chaîne complète, de la vidéo aux résultats", "The full pipeline, from video to results"),
+  vi("interface", "Interface du Corrélateur Automatique", "Automatic Correlator interface"),
+  vi("principe-subset", "Zone d'intérêt, subset et step", "Area of interest, subset and step"),
+  vi("principe-champ", "Champ de déplacement et déformation (illustration)", "Displacement field and strain (illustration)"),
+  vi("code-video", "Code : vidéo vers images PNG", "Code: video to PNG frames"),
+  vi("code-template", "Code : réglages du projet Vic-2D", "Code: Vic-2D project settings"),
+  vi("code-projet", "Code : référence et images déformées", "Code: reference and deformed images"),
+  vi("code-pipeline", "Code : corrélation en mode batch", "Code: batch correlation"),
+  vi("code-export", "Code : export des résultats", "Code: results export"),
+  vi("code-interface", "Code : interface en onglets", "Code: tabbed interface"),
+];
+
 // Images réelles par projet. Un projet absent garde les cases "bientôt disponible".
 export const galleryImages: Record<string, GalleryImage[]> = {
   "lesions-carieuses": [
@@ -101,6 +120,7 @@ export const galleryImages: Record<string, GalleryImage[]> = {
     p("croquis-2", "Croquis : disque semi-rigide et enveloppe latex", "Sketch: semi-rigid disc and latex envelope"),
   ],
   mobilis: mobilisImages,
+  vic2d: vic2dImages,
   symbiosuits: symbiosuitsImages,
   biomemory: biomemoryImages,
 };
