@@ -1,10 +1,17 @@
 import ProjectPage from "@/components/ProjectPage";
+import SymbiosuitsDesign from "@/components/SymbiosuitsDesign";
 
 export const metadata = {
   title: "Symbiosuits · Emmanuel Bailly",
-  description: "Exosquelette · sport, assistance physique, militaire.",
+  description: "Exosquelette des membres inférieurs · concept CAO, mises en plan cotées et fichiers STL.",
 };
 
 export default function Page() {
-  return <ProjectPage slug="symbiosuits" heroImage="/images/exo-dog.jpg" />;
+  return (
+    <ProjectPage
+      slug="symbiosuits"
+      heroImage="/images/symbiosuits/rendu-marche.jpg"
+      extra={<SymbiosuitsDesign />}
+    />
+  );
 }

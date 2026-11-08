@@ -33,6 +33,26 @@ export const biomemoryImages: GalleryImage[] = [
   b("69a598adfc66c40feaefc3e9_c4cba086d80053227feae11c71efad76_vision_biomemory.avif", "La vision de BioMemory", "BioMemory's vision"),
 ];
 
+const sy = (src: string, fr: string, en: string, kind: "cad" | "photo" = "cad"): GalleryImage => ({
+  src: `/images/symbiosuits/${src}.jpg`,
+  alt: { fr, en },
+  kind,
+});
+
+export const symbiosuitsImages: GalleryImage[] = [
+  sy("rendu-iso", "Exosquelette complet, vue d'ensemble", "Full exoskeleton, overview"),
+  sy("rendu-marche", "En phase de marche", "Walking pose"),
+  sy("rendu-face", "Vue de face", "Front view"),
+  sy("rendu-dos", "Vue arrière : unité de contrôle et batterie", "Back view: control unit and battery"),
+  sy("rendu-genou", "Gros plan sur les genoux", "Knee close-up"),
+  sy("plan-profil", "Plan de profil coté", "Dimensioned side view"),
+  sy("plan-face", "Plan de face coté", "Dimensioned front view"),
+  sy("plan-dos", "Plan arrière coté", "Dimensioned back view"),
+  sy("plan-dessus", "Plan de dessus coté", "Dimensioned top view"),
+  sy("plan-genou", "Détail de l'articulation du genou", "Knee joint detail"),
+  sy("plan-ceinture", "Détail de la ceinture, vue arrière", "Belt detail, back view"),
+];
+
 // Images réelles par projet. Un projet absent garde les cases "bientôt disponible".
 export const galleryImages: Record<string, GalleryImage[]> = {
   "lesions-carieuses": [
@@ -54,5 +74,6 @@ export const galleryImages: Record<string, GalleryImage[]> = {
     p("croquis-3", "Croquis : vue isométrique et clips", "Sketch: isometric view and clips"),
     p("croquis-2", "Croquis : disque semi-rigide et enveloppe latex", "Sketch: semi-rigid disc and latex envelope"),
   ],
+  symbiosuits: symbiosuitsImages,
   biomemory: biomemoryImages,
 };
