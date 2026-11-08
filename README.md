@@ -21,6 +21,7 @@ app/
 ├── icon.svg             # Favicon
 ├── gallery/page.tsx     # Galerie 3D/CAO
 └── projects/
+    ├── lesions-carieuses/
     ├── mobilis/
     ├── biomemory/
     ├── vic2d/
@@ -38,13 +39,17 @@ components/
 ├── Projects.tsx
 ├── GalleryTeaser.tsx
 ├── Contact.tsx
-├── ProjectPage.tsx      # Template unique pour les 7 pages projet
+├── ProjectPage.tsx      # Template unique pour les 8 pages projet
+├── CariesDesign.tsx     # Principe, croquis et mises en plan du projet lésions carieuses
+├── CadSheet.tsx         # Planche CAO annotée (repères, nomenclature, cartouche)
+├── CariesPrinciple.tsx  # Schéma de principe SVG du dispositif bi-chambre
 ├── Sparkle.tsx          # SVG chrome animé
 └── SectionHeader.tsx
 lib/
 ├── i18n.tsx             # Context léger custom (localStorage)
 ├── translations.ts      # Toutes les strings FR/EN
-└── projects.ts          # Contenu détaillé des 7 pages projet (FR/EN)
+├── projects.ts          # Contenu détaillé des 8 pages projet (FR/EN)
+└── cad.ts               # Repères et légendes des mises en plan annotées
 ```
 
 ## Modifier le contenu

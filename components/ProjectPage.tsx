@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 import { useI18n } from "@/lib/i18n";
 import { projectContent, projectOrder, ProjectSlug } from "@/lib/projects";
 
-type Props = { slug: ProjectSlug; heroImage?: string };
+type Props = { slug: ProjectSlug; heroImage?: string; extra?: React.ReactNode };
 
-export default function ProjectPage({ slug, heroImage }: Props) {
+export default function ProjectPage({ slug, heroImage, extra }: Props) {
   const { t, lang } = useI18n();
   const data = projectContent[slug][lang];
   const meta = projectOrder.find((p) => p.slug === slug)!;
@@ -52,7 +52,7 @@ export default function ProjectPage({ slug, heroImage }: Props) {
                   {meta.tag}
                 </span>
                 <span className="text-xs font-mono text-chrome-500">
-                  {String(meta.order).padStart(2, "0")} / 07
+                  {String(meta.order).padStart(2, "0")} / {String(projectOrder.length).padStart(2, "0")}
                 </span>
               </div>
 
@@ -111,6 +111,11 @@ export default function ProjectPage({ slug, heroImage }: Props) {
           </Section>
         )}
 
+      </div>
+
+      {extra && <div className="mx-auto max-w-6xl px-6 mt-16">{extra}</div>}
+
+      <div className="mx-auto max-w-4xl px-6 mt-16 space-y-16">
         {data.contribution.length > 0 && (
           <Section title={t("project.contribution")} accent={meta.accent}>
             <ul className="space-y-3">
