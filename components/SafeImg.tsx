@@ -13,6 +13,12 @@ export default function SafeImg({
   const [current, setCurrent] = useState(src);
   const [hidden, setHidden] = useState(false);
 
+  // nouvelle source (ex. image suivante dans la visionneuse) : on repart de zéro
+  useEffect(() => {
+    setCurrent(src);
+    setHidden(false);
+  }, [src]);
+
   const fail = () => {
     if (fallback && current !== fallback) setCurrent(fallback);
     else {

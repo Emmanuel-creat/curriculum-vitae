@@ -81,6 +81,7 @@ export default function ImageGrid({ images, accent }: { images: GalleryImage[]; 
           aria-label={current.alt[lang]}
         >
           <SafeImg
+            key={current.src}
             src={current.src}
             alt={current.alt[lang]}
             className={`max-w-full max-h-[78vh] object-contain ${current.kind === "cad" ? "bg-[#eef1f5] p-4" : ""}`}
