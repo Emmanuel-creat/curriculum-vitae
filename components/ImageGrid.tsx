@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useI18n } from "@/lib/i18n";
 import type { GalleryImage } from "@/lib/gallery";
+import SafeImg from "./SafeImg";
 
 export default function ImageGrid({ images, accent }: { images: GalleryImage[]; accent: string }) {
   const { lang } = useI18n();
@@ -47,7 +48,12 @@ export default function ImageGrid({ images, accent }: { images: GalleryImage[]; 
             className="brick brick-hover aspect-square relative overflow-hidden group text-left"
             aria-label={img.alt[lang]}
           >
-            <img
+            <div className="absolute inset-0 flex items-center justify-center" style={{ color: `${accent}55` }}>
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round">
+                <path d="M8 3c8 4 8 14 0 18M16 3c-8 4-8 14 0 18M9 7h6M8.5 12h7M9 17h6" />
+              </svg>
+            </div>
+            <SafeImg
               src={img.src}
               alt={img.alt[lang]}
               loading="lazy"
@@ -57,6 +63,7 @@ export default function ImageGrid({ images, accent }: { images: GalleryImage[]; 
             />
             <div className="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-ink-950/90 via-ink-950/60 to-transparent opacity-0 group-hover:opacity-100 transition">
               <div className="text-xs text-chrome-100 leading-snug">{img.alt[lang]}</div>
+              {img.credit && <div className="text-[10px] text-chrome-400 mt-1">© {img.credit}</div>}
             </div>
             <div className="absolute top-2 left-2 text-[10px] font-mono px-1.5 py-0.5 bg-ink-950/70" style={{ color: accent }}>
               {String(i + 1).padStart(2, "0")}
@@ -73,7 +80,7 @@ export default function ImageGrid({ images, accent }: { images: GalleryImage[]; 
           aria-modal="true"
           aria-label={current.alt[lang]}
         >
-          <img
+          <SafeImg
             src={current.src}
             alt={current.alt[lang]}
             className={`max-w-full max-h-[78vh] object-contain ${current.kind === "cad" ? "bg-[#eef1f5] p-4" : ""}`}
@@ -84,6 +91,7 @@ export default function ImageGrid({ images, accent }: { images: GalleryImage[]; 
               {String((open ?? 0) + 1).padStart(2, "0")} / {String(images.length).padStart(2, "0")}
             </span>
             {current.alt[lang]}
+            {current.credit && <span className="text-chrome-500"> · © {current.credit}</span>}
           </div>
           <div className="mt-4 flex gap-3" onClick={(e) => e.stopPropagation()}>
             <NavButton label={lang === "fr" ? "Précédente" : "Previous"} onClick={() => step(-1)} d="M15 6l-6 6 6 6" />

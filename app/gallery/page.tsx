@@ -11,7 +11,7 @@ import { galleryImages } from "@/lib/gallery";
 const R_AND_D = ["lesions-carieuses", "mobilis", "biomemory", "vic2d", "symbiosuits"] as const;
 
 export default function GalleryPage() {
-  const { t, dict } = useI18n();
+  const { t, dict, lang } = useI18n();
 
   return (
     <div className="pt-32 pb-24">
@@ -58,6 +58,13 @@ export default function GalleryPage() {
                   </Link>
                 </div>
 
+                {slug === "biomemory" && (
+                  <p className="-mt-4 mb-6 text-sm text-chrome-400 max-w-3xl">
+                    {lang === "fr"
+                      ? "Les images et rendus de mon travail chez MGA Medtech sont confidentiels. Les visuels ci-dessous proviennent du site officiel de BioMemory (biomemory.com)."
+                      : "The images and renders of my work at MGA Medtech are confidential. The visuals below come from BioMemory's official website (biomemory.com)."}
+                  </p>
+                )}
                 {galleryImages[slug] ? (
                   <ImageGrid images={galleryImages[slug]} accent={meta.accent} />
                 ) : (

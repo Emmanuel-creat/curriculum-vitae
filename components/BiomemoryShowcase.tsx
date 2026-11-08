@@ -4,43 +4,10 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { useI18n } from "@/lib/i18n";
 import SafeImg from "./SafeImg";
+import { biomemoryImages } from "@/lib/gallery";
 
 const ACCENT = "#22d3ee";
-const CDN = "https://cdn.prod.website-files.com/69a1daabcf12b345743e4373/";
-
-// Visuels publics du site officiel biomemory.com (chargés depuis leur CDN).
-const IMAGES = [
-  {
-    src: CDN + "6aa3f8a69a0f873448d18c11_techno.avif",
-    fr: "Échantillon d'ADN dans un instrument de stockage BioMemory",
-    en: "DNA sample inside a BioMemory storage instrument",
-  },
-  {
-    src: CDN + "6aa1573b645aa3b4fa6d972c_96c49b816362efbaca57cbd0a7f4a2c1_DNA%20data%20storage%20server.avif",
-    fr: "Machine de synthèse d'ADN",
-    en: "DNA synthesis machine",
-  },
-  {
-    src: CDN + "6acf8e61b5b1300184af9cc0_shannon-326-1600.avif",
-    fr: "Système de stockage de données sur ADN au laboratoire",
-    en: "DNA data storage system in the lab",
-  },
-  {
-    src: CDN + "6aa1573bb22d0428036aba9c_5f25ff9e4196608089c912ef370fa80b_lock.avif",
-    fr: "Détail du matériel de stockage sur ADN",
-    en: "Close-up of the DNA storage hardware",
-  },
-  {
-    src: CDN + "6aa80fbaf403bab22e34ecf6_Gemini_Generated_Image_q5p1n8q5p1n8q5p1%201.avif",
-    fr: "Lame de verre portant des dépôts d'ADN synthétique",
-    en: "Glass slide with synthetic DNA spots",
-  },
-  {
-    src: CDN + "6a58d8bb9b94300dc425b73e_biomemory-paris.avif",
-    fr: "Les locaux de BioMemory à Paris",
-    en: "BioMemory's Paris office",
-  },
-];
+const IMAGES = biomemoryImages.slice(0, 6);
 
 export default function BiomemoryShowcase() {
   const { lang } = useI18n();
@@ -115,7 +82,7 @@ export default function BiomemoryShowcase() {
         </div>
         <div className="grid gap-4 grid-cols-2 lg:grid-cols-3">
           {IMAGES.map((img, i) => (
-            <SiteImage key={img.src} src={img.src} alt={fr ? img.fr : img.en} index={i} />
+            <SiteImage key={img.src} src={img.src} alt={img.alt[lang]} index={i} />
           ))}
         </div>
         <p className="mt-4 text-xs text-chrome-500">
