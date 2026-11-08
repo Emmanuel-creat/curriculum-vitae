@@ -305,14 +305,14 @@ export const projectContent: Record<Slug, Record<"fr" | "en", ProjectContent>> =
       subtitle: "Exosquelette · sport, assistance, militaire",
       period: "2023 → 2024 · En pause",
       role: "Associé fondateur · Fabrication, CAO et web",
-      status: "En pause · Concept CAO repris en 2026",
+      status: "En pause",
       pitch:
         "Un exosquelette qui augmente le corps humain, pour l'athlète, pour le travailleur qui porte lourd, pour le soldat qui marche loin. Fabriqué à la main, pensé pour durer.",
       problem:
         "Les exosquelettes existants sont soit médicaux et hors de prix, soit industriels et rigides. Il manque une génération intermédiaire : robuste, modulaire, adressable au sport de haut niveau, à l'assistance physique du travailleur, et à l'usage militaire, trois marchés qui partagent les mêmes contraintes de fiabilité, de poids et d'endurance.",
       contribution: [
         "Fabrication de pièces prototypes par impression 3D et usinage.",
-        "Reprise en 2026 : modélisation 3D paramétrique détaillée d'un exosquelette des membres inférieurs complet : blindages ajustés au porteur, bras en treillis, moteurs de hanche et de genou, vérins de cheville, pack dorsal, câblage, exportés en STL.",
+        "Modélisation 3D paramétrique détaillée d'un exosquelette des membres inférieurs complet : blindages ajustés au porteur, bras en treillis, moteurs de hanche et de genou, vérins de cheville, pack dorsal, câblage.",
         "Mises en plan cotées (face, profil, dos, dessus) et détail de l'articulation du genou.",
         "Architecture d'assistance : capteurs d'angle et d'effort, actionneurs de hanche et de cheville, unité de contrôle et batterie à la ceinture.",
         "Création complète du site web du projet.",
@@ -320,11 +320,11 @@ export const projectContent: Record<Slug, Record<"fr" | "en", ProjectContent>> =
       ],
       results: [
         "Premières pièces prototypes fonctionnelles.",
-        "Concept CAO détaillé : plus de 200 pièces, 11 sous-ensembles, rendus, vue éclatée, plans cotés et fichiers STL téléchargeables.",
+        "Concept CAO détaillé : plus de 200 pièces, 11 sous-ensembles, rendus, vue éclatée, plans cotés.",
         "Vitrine web du projet en ligne.",
         "Le projet est en pause volontaire, il reprendra plus tard, avec l'expérience accumulée depuis.",
       ],
-      stack: ["Impression 3D", "Usinage", "SolidWorks", "CAO paramétrique", "STL", "Mise en plan", "HTML / CSS / JS"],
+      stack: ["Impression 3D", "Usinage", "SolidWorks", "CAO paramétrique", "Mise en plan", "HTML / CSS / JS"],
       links: [],
     },
     en: {
@@ -332,14 +332,14 @@ export const projectContent: Record<Slug, Record<"fr" | "en", ProjectContent>> =
       subtitle: "Exoskeleton · sport, assist, military",
       period: "2023 → 2024 · On hold",
       role: "Co-founder · Manufacturing, CAD and web",
-      status: "On hold · CAD concept resumed in 2026",
+      status: "On hold",
       pitch:
         "An exoskeleton that augments the human body, for athletes, for workers carrying loads, for soldiers walking far. Hand-built, made to last.",
       problem:
         "Existing exoskeletons are either medical and prohibitively expensive, or industrial and rigid. A middle generation is missing: robust, modular, addressable to elite sport, physical assist for workers, and military use, three markets that share the same reliability, weight and endurance constraints.",
       contribution: [
         "Prototype parts manufactured via 3D printing and machining.",
-        "Back on it in 2026: detailed parametric 3D model of a complete lower-limb exoskeleton: armor fitted to the wearer, truss struts, hip and knee motors, ankle actuators, back pack and cabling, exported as STL.",
+        "Detailed parametric 3D model of a complete lower-limb exoskeleton: armor fitted to the wearer, truss struts, hip and knee motors, ankle actuators, back pack and cabling.",
         "Dimensioned drawings (front, side, back, top) and a knee joint detail.",
         "Assistance architecture: angle and force sensors, hip and ankle actuators, control unit and battery on the belt.",
         "Full project website built from scratch.",
@@ -347,11 +347,11 @@ export const projectContent: Record<Slug, Record<"fr" | "en", ProjectContent>> =
       ],
       results: [
         "First functional prototype parts.",
-        "Detailed CAD concept: over 200 parts, 11 sub-assemblies, renders, exploded view, dimensioned drawings and downloadable STL files.",
+        "Detailed CAD concept: over 200 parts, 11 sub-assemblies, renders, exploded view, dimensioned drawings.",
         "Project website online.",
         "Project intentionally paused, will resume later, with everything learned since.",
       ],
-      stack: ["3D printing", "Machining", "SolidWorks", "Parametric CAD", "STL", "Technical drawings", "HTML / CSS / JS"],
+      stack: ["3D printing", "Machining", "SolidWorks", "Parametric CAD", "Technical drawings", "HTML / CSS / JS"],
       links: [],
     },
   },

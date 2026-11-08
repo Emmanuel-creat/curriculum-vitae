@@ -3,7 +3,7 @@ import SymbiosuitsDesign from "@/components/SymbiosuitsDesign";
 
 export const metadata = {
   title: "Symbiosuits · Emmanuel Bailly",
-  description: "Exosquelette des membres inférieurs · concept CAO, mises en plan cotées et fichiers STL.",
+  description: "Exosquelette des membres inférieurs · concept CAO, rendus et mises en plan cotées.",
 };
 
 export default function Page() {

@@ -7,20 +7,6 @@ import CadSheet from "./CadSheet";
 
 const ACCENT = "#fb923c";
 
-const STL = [
-  { file: "symbiosuits_exosquelette_complet.zip", fr: "Assemblage complet, debout (STL compressé)", en: "Full assembly, standing (zipped STL)", kb: 5263 },
-  { file: "pack_dorsal.stl", fr: "Pack dorsal : batterie, unité de contrôle, poignée", en: "Back pack: battery, control unit, handle", kb: 239 },
-  { file: "ceinture_bassin.stl", fr: "Ceinture, plaques ventrale, lombaire et ailes de hanche", en: "Belt, front, lumbar and hip wing plates", kb: 1704 },
-  { file: "moteur_hanche.stl", fr: "Moteur couple de hanche", en: "Hip torque motor", kb: 268 },
-  { file: "structure_cuisse.stl", fr: "Bras de cuisse, blindages, sangles", en: "Thigh strut, armor, straps", kb: 1694 },
-  { file: "moteur_genou.stl", fr: "Moteur de genou", en: "Knee motor", kb: 252 },
-  { file: "genouillere.stl", fr: "Genouillère blindée et biellettes", en: "Armored knee cap and links", kb: 537 },
-  { file: "structure_jambe.stl", fr: "Bras de jambe, protège-tibia, manchette", en: "Shank strut, shin guard, cuff", kb: 1179 },
-  { file: "verin_cheville.stl", fr: "Vérin électrique de cheville", en: "Electric ankle actuator", kb: 461 },
-  { file: "articulation_cheville.stl", fr: "Articulation de cheville", en: "Ankle joint", kb: 25 },
-  { file: "botte.stl", fr: "Botte renforcée et semelle instrumentée", en: "Reinforced boot and instrumented sole", kb: 1372 },
-  { file: "cablage.stl", fr: "Câblage", en: "Cabling", kb: 248 },
-];
 
 export default function SymbiosuitsDesign() {
   const { lang } = useI18n();
@@ -60,8 +46,8 @@ export default function SymbiosuitsDesign() {
         title={fr ? "Le concept en 3D" : "The concept in 3D"}
         intro={
           fr
-            ? "Reprise du projet en 2026 : à partir d'un schéma de principe, j'ai modélisé un exosquelette des membres inférieurs complet et détaillé. Les blindages épousent la morphologie du porteur, les bras en treillis portent trois actionneurs par jambe, et chaque pièce (visserie, sangles, câblage compris) est paramétrée puis exportée en STL."
-            : "Picking the project back up in 2026: from a principle sketch, I modelled a complete, detailed lower-limb exoskeleton. The armor follows the wearer's body, truss struts carry three actuators per leg, and every part (fasteners, straps and cabling included) is parametric and exported as STL."
+            ? "Pendant le projet, à partir d'un schéma de principe, j'ai modélisé un exosquelette des membres inférieurs complet et détaillé. Les blindages épousent la morphologie du porteur, les bras en treillis portent trois actionneurs par jambe, et chaque pièce (visserie, sangles, câblage compris) est paramétrée."
+            : "During the project, from a principle sketch, I modelled a complete, detailed lower-limb exoskeleton. The armor follows the wearer's body, truss struts carry three actuators per leg, and every part (fasteners, straps and cabling included) is parametric."
         }
       >
         <div className="grid gap-4 lg:grid-cols-[1.3fr_1fr]">
@@ -125,37 +111,6 @@ export default function SymbiosuitsDesign() {
         </div>
       </Block>
 
-      <Block
-        title={fr ? "Fichiers STL" : "STL files"}
-        intro={
-          fr
-            ? "Le modèle est téléchargeable : l'assemblage complet et chaque sous-ensemble séparément (côté droit, la jambe gauche est symétrique). Unités en millimètres."
-            : "The model can be downloaded: the full assembly and each sub-assembly on its own (right side, the left leg is mirrored). Units in millimetres."
-        }
-      >
-        <div className="grid gap-3 sm:grid-cols-2">
-          {STL.map((f) => (
-            <a
-              key={f.file}
-              href={`/models/symbiosuits/${f.file}`}
-              download
-              className="brick brick-hover p-4 flex items-center gap-4 min-w-0"
-            >
-              <span className="w-10 h-10 flex-shrink-0 inline-flex items-center justify-center border border-white/10" style={{ color: ACCENT }}>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z" />
-                  <path d="M12 12l8-4.5M12 12L4 7.5M12 12v9" />
-                </svg>
-              </span>
-              <span className="flex-1 min-w-0">
-                <span className="block text-sm text-chrome-100 truncate">{fr ? f.fr : f.en}</span>
-                <span className="block text-xs font-mono text-chrome-500 truncate">{f.file}</span>
-              </span>
-              <span className="text-xs font-mono text-chrome-400">{f.kb} Ko</span>
-            </a>
-          ))}
-        </div>
-      </Block>
     </div>
   );
 }
