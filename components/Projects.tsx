@@ -12,6 +12,7 @@ const CARD_KEYS = [
   { key: "biomemory", slug: "biomemory" },
   { key: "vic2d", slug: "vic2d" },
   { key: "symbiosuits", slug: "symbiosuits" },
+  { key: "scaffold", slug: "scaffold-studio" },
   { key: "calendrier", slug: "calendrier-bti" },
   { key: "arcade", slug: "arcade-online" },
   { key: "safescreen", slug: "safe-screen" },

@@ -27,9 +27,10 @@ export const projectOrder: ProjectMeta[] = [
   { slug: "biomemory", tag: "R&D", accent: "#22d3ee", order: 3 },
   { slug: "vic2d", tag: "R&D", accent: "#f472b6", order: 4 },
   { slug: "symbiosuits", tag: "R&D", accent: "#fb923c", order: 5 },
-  { slug: "calendrier-bti", tag: "Code", accent: "#818cf8", order: 6 },
-  { slug: "arcade-online", tag: "Code", accent: "#facc15", order: 7 },
-  { slug: "safe-screen", tag: "Code", accent: "#c084fc", order: 8 },
+  { slug: "scaffold-studio", tag: "R&D", accent: "#2dd4bf", order: 6 },
+  { slug: "calendrier-bti", tag: "Code", accent: "#818cf8", order: 7 },
+  { slug: "arcade-online", tag: "Code", accent: "#facc15", order: 8 },
+  { slug: "safe-screen", tag: "Code", accent: "#c084fc", order: 9 },
 ];
 
 type Slug =
@@ -38,6 +39,7 @@ type Slug =
   | "biomemory"
   | "vic2d"
   | "symbiosuits"
+  | "scaffold-studio"
   | "calendrier-bti"
   | "arcade-online"
   | "safe-screen";
@@ -389,6 +391,96 @@ export const projectContent: Record<Slug, Record<"fr" | "en", ProjectContent>> =
       ],
       stack: ["3D printing", "Machining", "SolidWorks", "Parametric CAD", "Technical drawings", "HTML / CSS / JS"],
       links: [],
+    },
+  },
+  "scaffold-studio": {
+    fr: {
+      title: "Scaffold Studio",
+      subtitle: "Conception et perfusion simulée de scaffolds osseux, dans le navigateur",
+      period: "Oct. 2026 → aujourd'hui",
+      role: "Projet personnel · Conception, développement et validation de bout en bout",
+      status: "Version 1.8 en ligne · Code ouvert",
+      pitch:
+        "Un banc d'essai numérique pour les scaffolds osseux : on dessine la structure poreuse, et l'outil calcule aussitôt sa rigidité, sa perméabilité, l'oxygène au coeur de la pièce et la croissance du tissu.",
+      problem:
+        "Concevoir un scaffold osseux, c'est arbitrer en permanence : assez de porosité et des pores assez larges (300 à 900 µm) pour que les cellules colonisent la structure, assez de matière pour rester proche de la rigidité de l'os et éviter le stress shielding, des parois assez épaisses pour être imprimées, et un cisaillement du fluide qui stimule les ostéoblastes sans les arracher. D'habitude, ces compromis se calculent dans quatre logiciels lourds (CAO, maillage, éléments finis, mécanique des fluides). Scaffold Studio les réunit dans une seule vue, en temps réel, sans serveur de calcul.",
+      contribution: [
+        "Génération de 9 surfaces minimales triplement périodiques (gyroïde, diamant, Schwarz P, I-WP, Neovius…), de treillis de poutres et de mousses de Voronoï, en mode réseau ou feuillet, avec gradients axial, radial ou depuis la surface.",
+        "Formes d'implants réelles : cage lombaire avec fenêtre de greffe, cupule acétabulaire, défauts osseux de rat, import d'un défaut segmenté en STL.",
+        "Mesures morphologiques par transformée de distance exacte : porosité, diamètre de pore, épaisseur de strut, surface spécifique, interconnectivité, tortuosité.",
+        "Homogénéisation par éléments finis voxel : tenseur de rigidité, modules Ex, Ey, Ez, surface d'anisotropie en 3D, carte de von Mises, comparaison aux plages de l'os.",
+        "Perfusion du milieu de culture par Boltzmann sur réseau D3Q19 (TRT), sur processeur ou sur carte graphique en WebGPU : perméabilité de Darcy, perte de charge, cisaillement pariétal, particules et lignes de courant.",
+        "Biologie : oxygène dissous avec consommation de Michaelis-Menten, ensemencement par perfusion, croissance du tissu pilotée par la courbure, jour après jour.",
+        "Fabrication et exports : épaisseur minimale selon le procédé, surplombs, STL, 3MF, VTK, maillage Abaqus, rapport de conception imprimable.",
+        "Studio de rendu intégré (rendu réaliste, séquences de caméra, vidéo image par image) qui a servi à tourner la vidéo de cette page.",
+      ],
+      results: [
+        "Solveurs vérifiés sur des cas analytiques : Poiseuille à moins de 1 %, réseau de sphères de Sangani et Acrivos à 0,4 %, borne de Voigt exacte, carte graphique et processeur identiques à 0,004 %.",
+        "Comparaison avec une étude publiée (Castro et al., 2019) sur trois TPMS à 70 % de porosité : même ordre des rigidités et rapports proches (1,29 et 0,78 contre 1,18 et 0,71).",
+        "Cas d'usage : pour un gyroïde titane de 8 mm, l'oxygène minimal reste à 196 µM sous perfusion contre 4,5 µM en culture statique, où un tiers des parois est hypoxique.",
+        "Application installable, utilisable hors ligne, en français et en anglais, avec tests automatiques, tests de bout en bout et jeu de données ouvert de 39 designs.",
+      ],
+      stack: [
+        "JavaScript",
+        "Three.js",
+        "WebGPU",
+        "Web Workers",
+        "Vite",
+        "Vitest",
+        "Playwright",
+        "TPMS",
+        "Éléments finis",
+        "Boltzmann sur réseau",
+        "Ingénierie tissulaire",
+      ],
+      links: [
+        { label: "Démo en ligne", href: "https://emmanuel-creat.github.io/Scaffold-Studio/" },
+        { label: "Repo GitHub", href: "https://github.com/Emmanuel-creat/Scaffold-Studio" },
+      ],
+    },
+    en: {
+      title: "Scaffold Studio",
+      subtitle: "Bone scaffold design and simulated perfusion, in the browser",
+      period: "Oct 2026 → present",
+      role: "Personal project · End-to-end design, development and validation",
+      status: "Version 1.8 live · Open source",
+      pitch:
+        "A digital test bench for bone scaffolds: draw the porous structure and the tool immediately computes its stiffness, permeability, oxygen in the core and tissue growth.",
+      problem:
+        "Designing a bone scaffold is a constant trade-off: enough porosity and wide enough pores (300 to 900 µm) for cells to colonise the structure, enough material to stay close to bone stiffness and avoid stress shielding, walls thick enough to be printed, and a fluid shear that stimulates osteoblasts without tearing them off. These trade-offs are usually computed across four heavy tools (CAD, meshing, finite elements, fluid dynamics). Scaffold Studio brings them together in a single real-time view, with no compute server.",
+      contribution: [
+        "Generation of 9 triply periodic minimal surfaces (gyroid, diamond, Schwarz P, I-WP, Neovius…), beam lattices and Voronoi foams, in network or sheet mode, with axial, radial or surface-based gradients.",
+        "Real implant shapes: lumbar cage with graft window, acetabular cup, rat bone defects, import of a segmented defect as STL.",
+        "Morphological measures with an exact distance transform: porosity, pore diameter, strut thickness, specific surface, interconnectivity, tortuosity.",
+        "Voxel finite element homogenisation: stiffness tensor, Ex, Ey, Ez moduli, 3D anisotropy surface, von Mises map, comparison with bone ranges.",
+        "Culture medium perfusion with a D3Q19 lattice Boltzmann solver (TRT), on CPU or GPU through WebGPU: Darcy permeability, pressure drop, wall shear stress, particles and streamlines.",
+        "Biology: dissolved oxygen with Michaelis-Menten consumption, perfusion seeding, curvature-driven tissue growth, day by day.",
+        "Manufacturing and exports: minimum wall thickness per process, overhangs, STL, 3MF, VTK, Abaqus mesh, printable design report.",
+        "Built-in render studio (realistic rendering, camera sequences, frame-by-frame video) used to shoot the video on this page.",
+      ],
+      results: [
+        "Solvers checked against analytical cases: Poiseuille under 1 %, Sangani and Acrivos sphere array at 0.4 %, exact Voigt bound, GPU and CPU identical within 0.004 %.",
+        "Comparison with a published study (Castro et al., 2019) on three TPMS at 70 % porosity: same stiffness ranking and close ratios (1.29 and 0.78 versus 1.18 and 0.71).",
+        "Use case: for an 8 mm titanium gyroid, minimum oxygen stays at 196 µM under perfusion versus 4.5 µM in static culture, where a third of the walls are hypoxic.",
+        "Installable app, works offline, in French and English, with unit tests, end-to-end tests and an open dataset of 39 designs.",
+      ],
+      stack: [
+        "JavaScript",
+        "Three.js",
+        "WebGPU",
+        "Web Workers",
+        "Vite",
+        "Vitest",
+        "Playwright",
+        "TPMS",
+        "Finite elements",
+        "Lattice Boltzmann",
+        "Tissue engineering",
+      ],
+      links: [
+        { label: "Live demo", href: "https://emmanuel-creat.github.io/Scaffold-Studio/" },
+        { label: "GitHub repo", href: "https://github.com/Emmanuel-creat/Scaffold-Studio" },
+      ],
     },
   },
   "calendrier-bti": {

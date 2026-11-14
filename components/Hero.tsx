@@ -9,9 +9,10 @@ const INDEX = [
   { n: "02", label: "BioMemory", href: "/projects/biomemory" },
   { n: "03", label: "VIC2D", href: "/projects/vic2d" },
   { n: "04", label: "Symbiosuits", href: "/projects/symbiosuits" },
-  { n: "05", label: "Calendrier BTI", href: "/projects/calendrier-bti" },
-  { n: "06", label: "Arcade Online", href: "/projects/arcade-online" },
-  { n: "07", label: "Safe Screen", href: "/projects/safe-screen" },
+  { n: "05", label: "Scaffold Studio", href: "/projects/scaffold-studio" },
+  { n: "06", label: "Calendrier BTI", href: "/projects/calendrier-bti" },
+  { n: "07", label: "Arcade Online", href: "/projects/arcade-online" },
+  { n: "08", label: "Safe Screen", href: "/projects/safe-screen" },
 ];
 
 export default function Hero() {

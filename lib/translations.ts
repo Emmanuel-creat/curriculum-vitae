@@ -63,6 +63,7 @@ export type Dict = {
       | "biomemory"
       | "vic2d"
       | "symbiosuits"
+      | "scaffold"
       | "calendrier"
       | "arcade"
       | "safescreen",
@@ -323,6 +324,13 @@ export const translations: Record<Lang, Dict> = {
           subtitle: "Exosquelette · sport, assistance, militaire",
           summary:
             "Développement d'un exosquelette : prototypage, impression 3D, usinage, site web du projet.",
+        },
+        scaffold: {
+          tag: "R&D",
+          title: "Scaffold Studio",
+          subtitle: "Scaffolds osseux · Simulation",
+          summary:
+            "Conception de scaffolds poreux avec rigidité, perfusion, oxygène et croissance du tissu calculés en direct, dans le navigateur.",
         },
         calendrier: {
           tag: "Code",
@@ -598,6 +606,13 @@ export const translations: Record<Lang, Dict> = {
           subtitle: "Exoskeleton · sport, assist, military",
           summary:
             "Building an exoskeleton: prototyping, 3D printing, machining, project website.",
+        },
+        scaffold: {
+          tag: "R&D",
+          title: "Scaffold Studio",
+          subtitle: "Bone scaffolds · Simulation",
+          summary:
+            "Porous scaffold design with stiffness, perfusion, oxygen and tissue growth computed live, in the browser.",
         },
         calendrier: {
           tag: "Code",

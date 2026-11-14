@@ -8,7 +8,7 @@ import SectionHeader from "@/components/SectionHeader";
 import ImageGrid from "@/components/ImageGrid";
 import { galleryImages } from "@/lib/gallery";
 
-const R_AND_D = ["biomemory", "lesions-carieuses", "mobilis", "vic2d", "symbiosuits"] as const;
+const R_AND_D = ["biomemory", "lesions-carieuses", "mobilis", "vic2d", "symbiosuits", "scaffold-studio"] as const;
 
 export default function GalleryPage() {
   const { t, dict, lang } = useI18n();
@@ -34,7 +34,9 @@ export default function GalleryPage() {
                   ? "biomemory"
                   : slug === "vic2d"
                     ? "vic2d"
-                    : "symbiosuits";
+                    : slug === "scaffold-studio"
+                      ? "scaffold"
+                      : "symbiosuits";
             const card = dict.projects.cards[cardKey];
             return (
               <section key={slug}>

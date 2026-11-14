@@ -98,6 +98,26 @@ export const vic2dImages: GalleryImage[] = [
   vi("code-interface", "Code : interface en onglets", "Code: tabbed interface"),
 ];
 
+const sc = (src: string, fr: string, en: string): GalleryImage => ({
+  src: `/images/scaffold-studio/${src}.jpg`,
+  alt: { fr, en },
+  kind: "render",
+});
+
+export const scaffoldImages: GalleryImage[] = [
+  sc("rendu-gyroide", "Gyroïde titane, porosité 70 %", "Titanium gyroid, 70 % porosity"),
+  sc("rendu-epaisseur", "Carte d'épaisseur locale, révélée par coupe", "Local thickness map, revealed by a cut"),
+  sc("rendu-perfusion", "Perfusion : particules et lignes de courant", "Perfusion: particles and streamlines"),
+  sc("rendu-cage", "Cage lombaire titane", "Titanium lumbar cage"),
+  sc("rendu-trabeculaire", "Os trabéculaire bio-inspiré", "Bio-inspired trabecular bone"),
+  sc("cisaillement-coupe", "Cisaillement pariétal en coupe", "Wall shear stress in section"),
+  sc("vol-dans-les-pores", "Vol à travers les pores", "Flying through the pores"),
+  sc("ui-defaut", "Interface de l'application", "App interface"),
+  sc("ui-epaisseur", "Interface : carte d'épaisseur", "Interface: thickness map"),
+  sc("ui-perfusion", "Interface : perfusion calculée", "Interface: computed perfusion"),
+  sc("ui-cage", "Interface : cage lombaire", "Interface: lumbar cage"),
+];
+
 // Images réelles par projet. Un projet absent garde les cases "bientôt disponible".
 export const galleryImages: Record<string, GalleryImage[]> = {
   "lesions-carieuses": [
@@ -122,5 +142,6 @@ export const galleryImages: Record<string, GalleryImage[]> = {
   mobilis: mobilisImages,
   vic2d: vic2dImages,
   symbiosuits: symbiosuitsImages,
+  "scaffold-studio": scaffoldImages,
   biomemory: biomemoryImages,
 };
